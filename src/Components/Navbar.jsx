@@ -35,6 +35,11 @@ const Navbar = () => {
               Contact Us
             </Link>
           </li>
+          <li className="nav-item">
+          <a href="/assets/HackTheChain3.O.pdf" className="nav-links" download>
+               Download Brochure
+          </a>
+          </li>
         </ul>
       </div>
     </nav>
