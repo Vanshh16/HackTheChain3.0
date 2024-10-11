@@ -1,0 +1,21 @@
+#faqs {
+  background-color: #e1e1e1;
+  padding: 50px;
+  min-height: 100vh; /* Makes sure the section takes up the full viewport height */
+  text-align: center;
+}
+
+#faqs h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#faqs p {
+  font-size: 18px;
+  color: #666;
+}
+
+#faqs p:hover {
+  color: #333;
+  transition: color 0.3s ease;
+}
