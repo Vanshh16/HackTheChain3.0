@@ -2,9 +2,11 @@ import React from 'react';
 
 const FAQs = () => {
   return (
-    <section id="faqs" style={{ height: '100vh', padding: '50px', background: '#e1e1e1' }}>
-      <h1>FAQs Section</h1>
-      <p>Here are some frequently asked questions.</p>
+    <section id="faqs" className="h-screen p-12 bg-gray-300 text-center">
+      <h1 className="text-4xl mb-5">FAQs Section</h1>
+      <p className="text-lg text-gray-600 hover:text-gray-800 transition-colors duration-300">
+        Here are some frequently asked questions.
+      </p>
     </section>
   );
 };
