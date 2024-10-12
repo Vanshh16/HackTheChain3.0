@@ -60,7 +60,7 @@ const App = () => {
       <Home />
 
       <section id="about" style={{ height: '100vh', padding: '50px', background: '#d1d1d1' }}>
-        <h1>About Section</h1>
+        <h1>ABOUT SECTION</h1>
         <p>This is the About section.</p>
         <About />
       </section>
