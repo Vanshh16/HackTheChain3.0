@@ -46,27 +46,25 @@ const CustomCursor = () => {
         {`body, * { cursor: none !important; }`}
       </style>
 
-      {/* Main cursor star */}
+      {/* Main circular cursor */}
       <div
-        className={`absolute bg-yellow-500 transform -translate-x-1/2 -translate-y-1/2 ${
+        className={`absolute bg-red-500 rounded-full transform -translate-x-1/2 -translate-y-1/2 ${
           isMoving ? '' : 'transition-transform duration-500 scale-110'
         }`}
         style={{
           left: cursorPosition.x,
           top: cursorPosition.y,
-          width: '25px',
-          height: '25px',
-          clipPath:
-            'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)',
+          width: '10px',
+          height: '10px',
           transition: 'width 0.2s ease, height 0.2s ease',
         }}
       />
 
-      {/* Star trail */}
+      {/* Circular trail */}
       {trailStars.map((star, index) => (
         <div
           key={index}
-          className={`absolute bg-yellow-500 transform -translate-x-1/2 -translate-y-1/2 ${
+          className={`absolute bg-red-500 rounded-full transform -translate-x-1/2 -translate-y-1/2 ${
             !isMoving ? 'transition-transform duration-500' : ''
           }`}
           style={{
@@ -74,12 +72,10 @@ const CustomCursor = () => {
             top: star.y,
             width: `${star.size}px`,
             height: `${star.size}px`,
-            clipPath:
-              'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)',
             opacity: isMoving ? 1 - index * 0.05 : 0, // Fade stars when cursor stops
             transform: isMoving
               ? 'scale(1)'
-              : `translate(${index * 2}px, ${index * 2}px) scale(0.1)`, // Merge towards main star
+              : `translate(${index * 2}px, ${index * 2}px) scale(0.1)`, // Merge towards main circle
             transition: `transform 0.5s ease ${index * 0.05}s, opacity 0.3s ease`, // Staggered merge effect
           }}
         />
