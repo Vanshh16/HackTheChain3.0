@@ -6,8 +6,6 @@ import ContactUs from './Components/ContactUs';
 import Sponsors from './Components/Sponsors';
 import About from './Components/About';
 import CustomCursor from './Components/CustomCursor'; // Import the CustomCursor component
-
-//dhruv
 import { Canvas } from '@react-three/fiber';
 import { Environment, ScrollControls } from '@react-three/drei';
 import './App.css'; // Make sure your CSS file is imported
@@ -72,11 +70,9 @@ function ScreenOpen() {
                     </section>
                 </div>
             ) : (
-                <>
-                    <div class="text-slicer">
-                        <AnimatedTransition onAnimationComplete={handleScreenOpen} />
-                    </div>
-                </>
+                <div className="text-slicer">
+                    <AnimatedTransition onAnimationComplete={handleScreenOpen} />
+                </div>
             )}
         </div>
     );
