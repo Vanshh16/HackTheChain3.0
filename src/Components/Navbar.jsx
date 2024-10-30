@@ -36,6 +36,16 @@ const Navbar = () => {
           </li>
           <li className="mr-16">
             <Link
+              to="timeline"
+              className="text-white text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
+              smooth={true}
+              duration={500}
+            >
+              Timeline
+            </Link>
+          </li>
+          <li className="mr-16">
+            <Link
               to="sponsors"
               className="text-white text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
               smooth={true}
