@@ -88,7 +88,7 @@ const Timeline = () => {
       <div className="progress-bar" ref={progressBarRef}>
         <div className="colored-overlay" ref={coloredOverlayRef}>
           <div className='timeline-logo'>
-            <img src="/src/assets/file.png" alt="Logo" className="progress-logo" ref={logoRef} />
+            <img src="/src/assets/pictures/file.png" alt="Logo" className="progress-logo" ref={logoRef} />
           </div>
         </div>
       </div>
