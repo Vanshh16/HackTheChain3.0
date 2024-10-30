@@ -73,11 +73,9 @@ function ScreenOpen() {
                     </section>
                 </div>
             ) : (
-                <>
-                    <div class="text-slicer">
-                        <AnimatedTransition onAnimationComplete={handleScreenOpen} />
-                    </div>
-                </>
+                <div className="text-slicer">
+                    <AnimatedTransition onAnimationComplete={handleScreenOpen} />
+                </div>
             )}
         </div>
     );
