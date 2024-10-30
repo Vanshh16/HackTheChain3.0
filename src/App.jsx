@@ -6,7 +6,7 @@ import ContactUs from './Components/ContactUs';
 import Sponsors from './Components/Sponsors';
 import About from './Components/About';
 import CustomCursor from './Components/CustomCursor'; // Import the CustomCursor component
-
+import Timeline from './Components/Timeline.jsx'
 //dhruv
 import { Canvas } from '@react-three/fiber';
 import { Environment, ScrollControls } from '@react-three/drei';
@@ -47,20 +47,21 @@ function ScreenOpen() {
         <div className="w-full h-screen bg-Gray-700">
             {isHomeVisible ? (
                 <div>
-                    <CustomCursor /> {/* Include the custom cursor */}
+                    <CustomCursor />
                     <Navbar />
                     <Home />
 
-                    <section id="about" style={{ height: '100vh', padding: '50px', background: '#d1d1d1' }}>
-                        <h1>ABOUT SECTION</h1>
-                        <p>This is the About section.</p>
+                    <section id="about" style={{ padding: '5px', background: '#d1d1d1' }}>
                         <About />
                     </section>
-
-                    <section id="sponsors" style={{ height: '100vh', padding: '50px', background: '#c1c1c1' }}>
-                        <h1>Sponsors Section</h1>
-                        <p>This is the Sponsors section.</p>
-                        <Sponsors />
+                    
+                    <section id="timeline" className='flex flex-col justify-center align-middle my-16 h-screen p-14'>
+                        <h1 className='text-white text-center m-8 text-6xl p-8 font-black'>Timeline</h1>
+                        <Timeline/>
+                    </section>
+                    
+                    <section id="sponsors" className='flex flex-col justify-center align-middle p-10'>
+                       <Sponsors />
                     </section>
 
                     <FAQs />
