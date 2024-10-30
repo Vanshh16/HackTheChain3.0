@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sponsors = () => {
   return (
-    <section id="sponsors" className="bg-gray-100 py-12 text-center min-h-screen">
+    <section id="sponsors" className="bg-gray-100 py-12 text-center min-h-screen mt-16">
       <h1 className="text-4xl mb-5">Our Sponsors</h1>
       <p className="text-lg text-gray-600 mb-10">
         We are grateful to our sponsors for their generous support.
