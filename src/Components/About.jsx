@@ -4,13 +4,15 @@ import '../Styles/About.css'
 import Domains from './Domain';
 
 const teamData = [
-  { id: 1, name: "Avinesh Rathore", imageUrl: "../assets/pictures/avineshboss.jpg" },
-  { id: 2, name: "Anany", imageUrl: "../assets/pictures/ananyshboss.jpg" },
-  { id: 3, name: "Devansh Gupta", imageUrl: "../assets/pictures/devanshboss.jpg" },
-  { id: 4, name: "Prateek", imageUrl: "../assets/pictures/gopalboss.jpg" },
-  { id: 5, name: "Vansh Nigam", imageUrl: "../assets/pictures/jashboss.jpg" },
-  { id: 6, name: "Gopal Patidar", imageUrl: "../assets/pictures/omboss.jpg" },
-  { id: 7, name: "Jash Parmar", imageUrl: ".../assets/pictues/banshboss" },
+  { id: 1, name: "Avinesh Rathore", imageUrl: "src/assets/pictures/avineshboss.jpg" },
+  { id: 2, name: "Anany Srivastava", imageUrl: "src/assets/pictures/ananyboss.jpg" },
+  { id: 3, name: "Devansh Gupta", imageUrl: "src/assets/pictures/devanshboss.jpg" },
+  { id: 4, name: "Prateek Singh", imageUrl: "src/assets/pictures/prateekboss.jpg" },
+  { id: 5, name: "Vansh Nigam", imageUrl: "src/assets/pictures/vanshboss.jpg" },
+  { id: 6, name: "Gopal Patidar", imageUrl: "src/assets/pictures/gopalboss.jpg" },
+  { id: 7, name: "Jash Parmar", imageUrl: "src/assets/pictures/jashboss.jpg" },
+  { id: 8, name: "Hari Om Meena", imageUrl: "src/assets/pictures/hariboss.jpg"},
+  { id: 9, name: "Om",  imageUrl: "src/assets/pictures/omboss.jpg"}
 ];
 
 const Team = () => {
