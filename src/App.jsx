@@ -6,6 +6,7 @@ import ContactUs from './Components/ContactUs';
 import Sponsors from './Components/Sponsors';
 import About from './Components/About';
 import CustomCursor from './Components/CustomCursor'; // Import the CustomCursor component
+import Prizes from './Components/Prizes.jsx';
 import Timeline from './Components/Timeline.jsx'
 //dhruv
 import { Canvas } from '@react-three/fiber';
@@ -13,6 +14,7 @@ import { Environment, ScrollControls } from '@react-three/drei';
 import './App.css'; // Make sure your CSS file is imported
 import MacContainer from './Components/MacContainer';
 import AnimatedTransition from './Components/AnimatedTransition';
+
 
 function App() {
     return (
@@ -59,7 +61,9 @@ function ScreenOpen() {
                         <h1 className='text-white text-center m-8 text-6xl p-8 font-black'>Timeline</h1>
                         <Timeline/>
                     </section>
-                    
+                    <section> 
+                        <Prizes />
+                    </section>
                     <section id="sponsors" className='flex flex-col justify-center align-middle p-10'>
                        <Sponsors />
                     </section>
