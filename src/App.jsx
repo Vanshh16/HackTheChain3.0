@@ -57,8 +57,8 @@ function ScreenOpen() {
                         <About />
                     </section>
                     
-                    <section id="timeline" className='flex flex-col justify-center align-middle my-16 h-screen p-14'>
-                        <h1 className='text-white text-center m-8 text-6xl p-8 font-black'>Timeline</h1>
+                    <section id="timeline" className='flex flex-col justify-center align-middle min-h-screen m-10'>
+                        <h1 className='text-white text-center m-8 text-6xl font-black p-8'>Timeline</h1>
                         <Timeline/>
                     </section>
                     <section> 

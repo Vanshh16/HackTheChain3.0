@@ -74,7 +74,7 @@ const Timeline = () => {
   }, [hasScrolled]);
 
   return (
-    <div ref={timelineRef} className='max-h-screen'>
+    <div ref={timelineRef}>
       {timelineEvents.map((event, index) => (
         <div key={event.id} ref={(el) => (eventRefs.current[index] = el)} className="timeline-event">
           <div className="timeline-event-content">
