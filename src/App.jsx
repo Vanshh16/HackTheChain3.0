@@ -7,7 +7,8 @@ import Sponsors from './Components/Sponsors';
 import About from './Components/About';
 import CustomCursor from './Components/CustomCursor'; // Import the CustomCursor component
 import Prizes from './Components/Prizes.jsx';
-import Timeline from './Components/Timeline.jsx'
+import Timeline from './Components/Timeline.jsx';
+import Stats from "./Components/Stats.jsx";
 //dhruv
 import { Canvas } from '@react-three/fiber';
 import { Environment, ScrollControls } from '@react-three/drei';
@@ -60,6 +61,9 @@ function ScreenOpen() {
                     <section id="timeline" className='flex flex-col justify-center align-middle min-h-screen m-10'>
                         <h1 className='text-white text-center m-8 text-6xl font-black p-8'>Timeline</h1>
                         <Timeline/>
+                    </section>
+                    <section>
+                        <Stats />
                     </section>
                     <section> 
                         <Prizes />
