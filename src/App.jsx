@@ -9,6 +9,7 @@ import CustomCursor from './Components/CustomCursor'; // Import the CustomCursor
 import Prizes from './Components/Prizes.jsx';
 import Timeline from './Components/Timeline.jsx';
 import Stats from "./Components/Stats.jsx";
+import Ending from "./Components/Ending.jsx";
 //dhruv
 import { Canvas } from '@react-three/fiber';
 import { Environment, ScrollControls } from '@react-three/drei';
@@ -78,6 +79,9 @@ function ScreenOpen() {
                         <h1>Contact Us Section</h1>
                         <p>This is the Contact Us section.</p>
                         <ContactUs />
+                    </section>
+                    <section> 
+                        <Ending />
                     </section>
                 </div>
             ) : (
