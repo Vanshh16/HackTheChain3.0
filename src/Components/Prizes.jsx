@@ -7,9 +7,9 @@ const trophies = [
   {
     image: first,
     title: 'Winner',
-    color: 'bg-gray-800',
+    color: 'bg-white/65',
     borderColor: 'border-yellow-400',
-    details: '1st place prize details go here',
+    details: '1st place prize details go here.',
   },
   {
     image: second,
@@ -51,17 +51,18 @@ const TrophyCard = ({ image, title, color, borderColor, details }) => {
   return (
     <div
       ref={cardRef}
-      className="isolate aspect-video w-96 rounded-xl bg-transparent shadow-lg ring-1 ring-black/5"
+      className={`h-full w-full bg-gray-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-6xl bg-opacity-50 group relative p-6 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl shadow-lg ring-1 ring-black/5`}
       style={{ width: '300px', height: '400px' }}
     >
       <div
-        className={`flex items-center justify-center rounded-full p-4 transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:shadow-xl `}
+        // className={`flex items-center justify-center p-4 transition-transform duration-300 ease-in-out group-hover:scale-110 group-hover:shadow-xl `}
+        className={`flex items-center justify-center p-4`}
         style={{ width: '100%', height: '70%' }}
       >
         <img
           src={image}
           alt="Trophy"
-          className="w-full" 
+          className="w-full h-svhobject-contain transition-transform duration-300 ease-in-out hover:scale-150" // Increased trophy size
           style={{ transform: 'perspective(500px) rotateX(15deg) rotateY(-10deg)' }}
         />
       </div>
@@ -89,7 +90,7 @@ const TrophyCard = ({ image, title, color, borderColor, details }) => {
           className="absolute inset-0 bg-gray-900 bg-opacity-90 rounded-lg flex items-center justify-center p-4 text-white"
           style={{ zIndex: 10 }}
         >
-          <div className="text-center font-serif">
+          <div className="text-center">
             {details}
           </div>
         </div>
@@ -98,10 +99,10 @@ const TrophyCard = ({ image, title, color, borderColor, details }) => {
   );
 };
 
-const Prizes= () => {
+const Second = () => {
   return (
     <div className="bg-black min-h-screen flex flex-col items-center justify-center p-8">
-      <h1 className="text-5xl font-bold text-white mb-12 font-sans">Prizes</h1>
+      <h1 className="text-5xl font-bold text-white mb-12">Prizes</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {trophies.map((trophy, index) => (
           <TrophyCard
@@ -118,4 +119,4 @@ const Prizes= () => {
   );
 };
 
-export default Prizes;
+export default Second;
