@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useSpring, animated } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
-
+import "../Styles/Stats.css";
 function Number({ n, startAnimation }) {
   const { number } = useSpring({
     from: { number: 0 },
@@ -44,7 +44,7 @@ const First = () => {
   ];
 
   return (
-    <div className="bg-black font-sans text-white py-12">
+    <div className="bg-black font-sans text-white py-40">
       <div className="container bg-black mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {stats.map((stat, index) => (
           <StatCard key={index} title={stat.title} value={stat.value} description={stat.description} />
@@ -66,8 +66,8 @@ function StatCard({ title, value, description }) {
 
   return (
     <div ref={ref} className="text-center">
-      <h2 className="text-4xl font-medium mb-2 from-amber-400">
-        <span className='font-mono text-4xl bg-gradient-to-bl from-blue-500 to-blue-800 bg-clip-text text-transparent leading-normal'>
+      <h2 className="text-4xl font-medium mb-2">
+        <span className='number text-4xl bg-gradient-to-bl from-blue-500 to-blue-800 bg-clip-text text-transparent leading-normal font-semibold'>
           <Number n={value} startAnimation={hasAnimated} />+
         </span>
       </h2>
