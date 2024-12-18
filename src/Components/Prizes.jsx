@@ -9,7 +9,7 @@ const trophies = [
     title: 'Winner',
     color: 'bg-gray-800',
     borderColor: 'border-yellow-400',
-    details: '1st place prize details go here.',
+    details: '1st place prize details go here',
   },
   {
     image: second,
@@ -51,7 +51,7 @@ const TrophyCard = ({ image, title, color, borderColor, details }) => {
   return (
     <div
       ref={cardRef}
-      className={`group relative ${color} p-6 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:border ${borderColor} border-2`}
+      className="isolate aspect-video w-96 rounded-xl bg-transparent shadow-lg ring-1 ring-black/5"
       style={{ width: '300px', height: '400px' }}
     >
       <div
@@ -61,7 +61,7 @@ const TrophyCard = ({ image, title, color, borderColor, details }) => {
         <img
           src={image}
           alt="Trophy"
-          className="w-full h-svhobject-contain" // Increased trophy size
+          className="w-full" 
           style={{ transform: 'perspective(500px) rotateX(15deg) rotateY(-10deg)' }}
         />
       </div>
@@ -89,7 +89,7 @@ const TrophyCard = ({ image, title, color, borderColor, details }) => {
           className="absolute inset-0 bg-gray-900 bg-opacity-90 rounded-lg flex items-center justify-center p-4 text-white"
           style={{ zIndex: 10 }}
         >
-          <div className="text-center">
+          <div className="text-center font-serif">
             {details}
           </div>
         </div>
@@ -101,7 +101,7 @@ const TrophyCard = ({ image, title, color, borderColor, details }) => {
 const Prizes= () => {
   return (
     <div className="bg-black min-h-screen flex flex-col items-center justify-center p-8">
-      <h1 className="text-5xl font-bold text-white mb-12">Prizes</h1>
+      <h1 className="text-5xl font-bold text-white mb-12 font-sans">Prizes</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {trophies.map((trophy, index) => (
           <TrophyCard
