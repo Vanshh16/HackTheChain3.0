@@ -3,6 +3,7 @@ import React from 'react';
 import '../Styles/About.css'
 import Domains from './Domain';
 
+
 const teamData = [
   { id: 1, name: "Avinesh Rathore", imageUrl: "src/assets/pictures/avineshboss.jpg" },
   { id: 2, name: "Anany Srivastava", imageUrl: "src/assets/pictures/ananyboss.jpg" },
@@ -17,6 +18,7 @@ const teamData = [
 
 const Team = () => {
   return (
+    <>
     <div className="team-container">
       <h1>ABOUT US</h1>
       <div className="aboutuscontent">
@@ -45,7 +47,7 @@ const Team = () => {
       </div>
       
     </div>
-    
+    </>
   );
 };
 
