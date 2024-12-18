@@ -5,16 +5,13 @@ import Home from './Components/Home';
 import ContactUs from './Components/ContactUs';
 import Sponsors from './Components/Sponsors';
 import About from './Components/About';
-import CustomCursor from './Components/CustomCursor'; // Import the CustomCursor component
+import CustomCursor from './Components/CustomCursor';
 import Prizes from './Components/Prizes.jsx';
 import Timeline from './Components/Timeline.jsx';
 import Stats from "./Components/Stats.jsx";
 import Ending from "./Components/Ending.jsx";
-//dhruv
-import { Canvas } from '@react-three/fiber';
-import { Environment, ScrollControls } from '@react-three/drei';
-import './App.css'; // Make sure your CSS file is imported
-import MacContainer from './Components/MacContainer';
+
+import './App.css';
 import AnimatedTransition from './Components/AnimatedTransition';
 
 
@@ -44,7 +41,7 @@ function ScreenOpen() {
     const handleScreenOpen = () => {
         console.log("Animation...");
         sessionStorage.setItem('animationPlayed', 'true'); // Mark animation as played
-        setIsHomeVisible(true); // Show Home component
+        setIsHomeVisible(true); 
     };
 
     return (

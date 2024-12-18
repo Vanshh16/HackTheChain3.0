@@ -2,10 +2,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../Styles/Timeline.css';
 
 const timelineEvents = [
-  { id: 1, title: "Registration", date: "2024-09-15", description: "Registration period for HackTheChain 3.0" },
-  { id: 2, title: "Acceptance Letter rollout", date: "2024-10-30", description: "Mails sent to accepted hackers" },
-  { id: 3, title: "Hacking Hours", date: "2024-11-20", description: "The hackathon period" },
-  { id: 4, title: "Winner Announcement", date: "2024-12-30", description: "Winner Announcement and Closing Ceremony" },
+  { id: 1, title: "Registration", date: "2025-01-10", description: "Registration period for HackTheChain 3.0" },
+  { id: 2, title: "Acceptance Letter rollout", date: "2025-01-20", description: "Mails sent to accepted hackers" },
+  { id: 3, title: "Hacking Hours", date: "2024-02-15", description: "The hackathon period" },
+  { id: 4, title: "Winner Announcement", date: "2024-02-16", description: "Winner Announcement and Closing Ceremony" },
 ];
 
 const findNearestEvent = (events) => {
@@ -88,7 +88,7 @@ const Timeline = () => {
       <div className="progress-bar" ref={progressBarRef}>
         <div className="colored-overlay" ref={coloredOverlayRef}>
           <div className='timeline-logo'>
-            <img src="/src/assets/pictures/file.png" alt="Logo" className="progress-logo" ref={logoRef} />
+            <img src="/hackTheChain.png" alt="Logo" className="progress-logo" ref={logoRef} />
           </div>
         </div>
       </div>
