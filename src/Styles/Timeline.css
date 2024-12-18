@@ -12,8 +12,8 @@ h1 {
   position: absolute;
   left: 21rem;
   top: 0;
-  width: 1.5rem;
-  height: 100%;
+  width: 2rem;
+  height: 95%;
   background-color: black;
   border-radius: 15px;
   overflow: hidden;
@@ -36,10 +36,9 @@ h1 {
   left: 0%;
   top: 0%;
   transform: translateY(0);
-  width: 2rem;
-  height: 2rem;
+  width: 5rem;
+  height: 5rem;
   transition: transform 0.5s ease;
-  border-radius: 50%;
   z-index: 5;
 }
 
@@ -61,7 +60,7 @@ h1 {
 }
 
 .timeline-event-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #00d9ff;
   border-bottom: 1px dashed palegoldenrod;
@@ -94,6 +93,15 @@ h1 {
   position: relative;
 }
 
+@media (max-width: 1400px) {
+  .timeline-event{
+    margin-left: 25rem;
+  }
+  .progress-bar{
+    left: 15rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .timeline-event-title {
     font-size: 1.5rem;
@@ -107,6 +115,12 @@ h1 {
   .timeline-event-connector {
     left: -10rem;
     width: 10rem;
+  }
+  .timeline-event{
+    margin-left: 20rem;
+  }
+  .progress-bar{
+    left: 15rem;
   }
 }
 
@@ -158,17 +172,17 @@ h1 {
   }
   .progress-bar {
     width: 5px;
-    z-index: -10000;
+    z-index: -1000;
   }
 }
 
 @media (max-width: 1024px) {
   .progress-bar {
-    left: 15rem;
+    left: 5rem;
   }
 
   .timeline-event {
-    margin-left: 25rem;
+    margin-left: 15rem;
     margin-right: 15rem;
   }
 }
