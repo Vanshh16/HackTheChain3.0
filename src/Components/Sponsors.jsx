@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sponsors = () => {
   return (
-    <section className="w-full min-h-[300vh] bg-black overflow-x-hidden ">
+    <section className="w-full min-h-[100vh] bg-black overflow-x-hidden ">
     <div className="text-white">
       <div className="container mx-auto py-20 text-center">
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold">Sponsors</h1>
@@ -16,8 +16,8 @@ const Sponsors = () => {
         </p>
 
         {/* Platinum Sponsor */}
-        <div className="relative w-[90%] mx-auto mt-10 md:mt-16 px-6 md:px-[60px] py-4 md:py-[26px] rounded-2xl bg-[linear-gradient(182deg,_rgb(70,70,70)_-65%,_rgba(70,70,70,0.15)_98.55%)] hover:bg-[linear-gradient(rgba(53,225,255,0.4)_-50%,_rgba(58,58,58,0.15)_50%)] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-lg before:bg-[linear-gradient(rgba(53,225,255,0.4)_-6.4%,_rgba(58,58,58,0.15)_99.89%)] before:transition-opacity before:duration-500 before:ease-linear before:opacity-0 hover:before:opacity-100 backdrop-blur-0 before:bg-opacity-30">
-          <div className="flex flex-col items-center text-center gap-4 md:gap-6">
+        <div className="relative w-[80%] mx-auto mt-6 md:mt-10 px-4 md:px-6 py-2 md:py-4 rounded-xl bg-[linear-gradient(182deg,_rgb(70,70,70)_-65%,_rgba(70,70,70,0.15)_98.55%)] hover:bg-[linear-gradient(rgba(53,225,255,0.4)_-50%,_rgba(58,58,58,0.15)_50%)] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-lg before:bg-[linear-gradient(rgba(53,225,255,0.4)_-6.4%,_rgba(58,58,58,0.15)_99.89%)] before:transition-opacity before:duration-500 before:ease-linear before:opacity-0 hover:before:opacity-100 backdrop-blur-0 before:bg-opacity-30">
+          <div className="flex flex-col items-center text-center gap-2 md:gap-4">
             <h3 className="text-3xl md:text-4xl font-extrabold hover:text-black pt-6 md:pt-8">Platinum Sponsor</h3>
             <div className="grid grid-cols-1 gap-4">
               <div className="flex items-center justify-center my-2">
@@ -34,8 +34,8 @@ const Sponsors = () => {
         </div>
 
         {/* Diamond Sponsors */}
-        <div className="relative w-[90%] mx-auto mt-10 md:mt-16 px-6 md:px-[60px] py-4 md:py-[26px] rounded-2xl bg-[linear-gradient(182deg,_rgb(70,70,70)_-65%,_rgba(70,70,70,0.15)_98.55%)] hover:bg-[linear-gradient(rgba(53,225,255,0.4)_-50%,_rgba(58,58,58,0.15)_50%)] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-lg before:bg-[linear-gradient(rgba(20,241,149,0.4)_0%,_rgba(58,58,58,0.15)_100%)] before:transition-opacity before:duration-500 before:ease-linear before:opacity-0 hover:before:opacity-100 backdrop-blur-0 before:bg-opacity-30">
-          <div className="flex flex-col items-center text-center gap-4 md:gap-6">
+        <div className="relative w-[80%] mx-auto mt-6 md:mt-10 px-4 md:px-6 py-2 md:py-4 rounded-xl bg-[linear-gradient(182deg,_rgb(70,70,70)_-65%,_rgba(70,70,70,0.15)_98.55%)] hover:bg-[linear-gradient(rgba(53,225,255,0.4)_-50%,_rgba(58,58,58,0.15)_50%)] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-lg before:bg-[linear-gradient(rgba(20,241,149,0.4)_0%,_rgba(58,58,58,0.15)_100%)] before:transition-opacity before:duration-500 before:ease-linear before:opacity-0 hover:before:opacity-100 backdrop-blur-0 before:bg-opacity-30">
+          <div className="flex flex-col items-center text-center  gap-2 md:gap-4">
             <h3 className="text-3xl md:text-4xl font-extrabold hover:text-green-400 pt-6 md:pt-8">Diamond Sponsors</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
               <a href="https://quine.sh/" target="_blank" rel="noopener noreferrer">
@@ -57,8 +57,8 @@ const Sponsors = () => {
         </div>
 
         {/* Gold Sponsor */}
-        <div className="relative w-[90%] mx-auto mt-10 md:mt-16 px-6 md:px-[60px] py-4 md:py-[26px] rounded-2xl bg-[linear-gradient(182deg,_rgb(70,70,70)_-65%,_rgba(70,70,70,0.15)_98.55%)] hover:bg-[linear-gradient(rgba(255,63,192,0.6)_-50%,_rgba(58,58,58,0.15)_50%)] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-lg before:bg-[linear-gradient(rgba(255,63,192,0.6)_0%,_rgba(58,58,58,0.15)_100%)] before:transition-opacity before:duration-500 before:ease-linear before:opacity-0 hover:before:opacity-100 backdrop-blur-0 before:bg-opacity-30">
-          <div className="flex flex-col items-center text-center gap-4 md:gap-6">
+        <div className="relative w-[80%] mx-auto mt-6 md:mt-10 px-4 md:px-6 py-2 md:py-4 rounded-xl bg-[linear-gradient(182deg,_rgb(70,70,70)_-65%,_rgba(70,70,70,0.15)_98.55%)] hover:bg-[linear-gradient(rgba(255,63,192,0.6)_-50%,_rgba(58,58,58,0.15)_50%)] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-lg before:bg-[linear-gradient(rgba(255,63,192,0.6)_0%,_rgba(58,58,58,0.15)_100%)] before:transition-opacity before:duration-500 before:ease-linear before:opacity-0 hover:before:opacity-100 backdrop-blur-0 before:bg-opacity-30">
+          <div className="flex flex-col items-center text-center  gap-2 md:gap-4">
             <h3 className="text-3xl md:text-4xl font-extrabold hover:text-pink-400 pt-6 md:pt-8">Gold Sponsor</h3>
             <div className="grid grid-cols-1 gap-4">
               <div className="flex items-center justify-center my-2">
@@ -75,7 +75,7 @@ const Sponsors = () => {
         </div>
 
         {/* Other and Campus Sponsors */}
-        <div className="flex flex-col md:flex-row mx-auto text-center gap-y-6 md:gap-6 w-[90%] pt-10 md:pt-14">
+        <div className="flex flex-col md:flex-row mx-auto text-center gap-y-6 md:gap-6 w-[80%] pt-10 md:pt-14">
           <div className="p-4 w-full md:w-1/2 mx-auto h-72 md:h-72 lg:h-80 rounded-lg bg-[linear-gradient(182deg,_rgb(70,70,70)_-65%,_rgba(70,70,70,0.15)_98.55%)] hover:bg-[linear-gradient(rgba(176,103,255,0.6)_-50%,rgba(58,58,58,0.15)_50%)] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-lg before:bg-[linear-gradient(rgba(176,103,255,0.6)_0%,rgba(58,58,58,0.15)_100%)] before:transition-opacity before:duration-500 before:ease-linear before:opacity-0 hover:before:opacity-100 backdrop-blur-0 before:bg-opacity-30">
             <h4 className="text-2xl md:text-3xl font-extrabold hover:text-purple-400 pt-20 md:pt-24">Other Sponsors</h4>
             <div className="flex items-center justify-center my-2">

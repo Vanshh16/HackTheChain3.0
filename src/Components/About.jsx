@@ -43,9 +43,8 @@ const Team = () => {
       </div>
       </div>
       <div className='domainbox'>
-      <Domains></Domains>
+      <Domains />
       </div>
-      
     </div>
     </>
   );

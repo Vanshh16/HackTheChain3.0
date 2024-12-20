@@ -67,7 +67,7 @@ function StatCard({ title, value, description }) {
   return (
     <div ref={ref} className="text-center">
       <h2 className="text-4xl font-medium mb-2">
-        <span className='number text-4xl bg-gradient-to-bl from-blue-500 to-blue-800 bg-clip-text text-transparent leading-normal font-semibold'>
+        <span className='number text-4xl bg-clip-text text-transparent leading-normal font-semibold'>
           <Number n={value} startAnimation={hasAnimated} />+
         </span>
       </h2>

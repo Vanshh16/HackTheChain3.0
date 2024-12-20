@@ -13,9 +13,9 @@ const Home = () => {
         <Clock />
       </div>
 
-      <p className="text-lg text-gray-400 hover:text-white transition-colors duration-300 mt-10 clock">
+      {/* <p className="text-lg text-gray-400 hover:text-white transition-colors duration-300 mt-10 clock">
         Welcome to the Home section.
-      </p>
+      </p> */}
 
       <img className="dhruv" src="../hackTheChain.png" alt="not available .." />
 
