@@ -10,10 +10,10 @@ import Prizes from './Components/Prizes.jsx';
 import Timeline from './Components/Timeline.jsx';
 import Stats from "./Components/Stats.jsx";
 import Ending from "./Components/Ending.jsx";
+import AnimatedTransition from './Components/AnimatedTransition';
+import Chatbot from './Components/ChatBot.jsx';
 
 import './App.css';
-import AnimatedTransition from './Components/AnimatedTransition';
-
 
 function App() {
     return (
@@ -25,6 +25,7 @@ function App() {
 
 function ScreenOpen() {
     const [isHomeVisible, setIsHomeVisible] = useState(false); // State to control rendering of Home component
+    const [isChatbotVisible, setIsChatbotVisible] = useState(false); // State to toggle chatbot visibility
 
     // Check if animation has already been played
     useEffect(() => {
@@ -42,6 +43,10 @@ function ScreenOpen() {
         console.log("Animation...");
         sessionStorage.setItem('animationPlayed', 'true'); // Mark animation as played
         setIsHomeVisible(true); 
+    };
+
+    const toggleChatbot = () => {
+        setIsChatbotVisible(!isChatbotVisible); // Toggle visibility of chatbot
     };
 
     return (
@@ -80,6 +85,16 @@ function ScreenOpen() {
                     <section> 
                         <Ending />
                     </section>
+
+                    {/* Chatbot */}
+                    {isChatbotVisible && <Chatbot onClose={toggleChatbot} />}
+                    
+                    {/* Chatbot toggle icon */}
+                    {!isChatbotVisible && (
+                        <div className="fixed bottom-10 right-10 cursor-pointer z-[9999]" onClick={toggleChatbot}>
+                            <img src="chat-icon.png" alt="Chatbot Icon" className="w-12 h-12" />
+                        </div>
+                    )}
                 </div>
             ) : (
                 <div className="text-slicer">
