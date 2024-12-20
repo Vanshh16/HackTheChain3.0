@@ -5,7 +5,6 @@ import Home from './Components/Home';
 import ContactUs from './Components/ContactUs';
 import Sponsors from './Components/Sponsors';
 import About from './Components/About';
-import CustomCursor from './Components/CustomCursor';
 import Prizes from './Components/Prizes.jsx';
 import Timeline from './Components/Timeline.jsx';
 import Stats from "./Components/Stats.jsx";
@@ -48,7 +47,6 @@ function ScreenOpen() {
         <div className="w-full h-screen bg-Gray-700">
             {isHomeVisible ? (
                 <div>
-                    <CustomCursor />
                     <Navbar />
                     <Home />
 
@@ -69,13 +67,8 @@ function ScreenOpen() {
                     <section id="sponsors" className='flex flex-col justify-center align-middle p-10'>
                        <Sponsors />
                     </section>
-
-                    <FAQs />
-
-                    <section id="contact" style={{ height: '100vh', padding: '50px', background: '#b1b1b1' }}>
-                        <h1>Contact Us Section</h1>
-                        <p>This is the Contact Us section.</p>
-                        <ContactUs />
+                    <section>
+                       <FAQs />
                     </section>
                     <section> 
                         <Ending />
