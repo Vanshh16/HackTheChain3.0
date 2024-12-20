@@ -54,37 +54,25 @@ function ScreenOpen() {
                     <Navbar />
                     <Home />
 
-                    <section>
+                    {/* <section> */}
                         <About />
-                    </section>
+                    {/* </section> */}
                     
-                    <section id="timeline" className='flex flex-col justify-center align-middle min-h-screen m-10'>
-                        <h1 className='text-white text-center m-8 text-6xl font-black p-8'>Timeline</h1>
+                    {/* <section id="timeline" className='flex flex-col justify-center align-middle min-h-screen m-10'> */}
+                        {/* <h1 className='text-white text-center m-8 text-6xl font-black p-8'>Timeline</h1> */}
                         <Timeline/>
-                    </section>
-                    <section>
                         <Stats />
-                    </section>
-                    <section> 
                         <Prizes />
-                    </section>
-                    <section id="sponsors" className='flex flex-col justify-center align-middle p-10'>
-                       <Sponsors />
-                    </section>
-                    <section>
+                   <Sponsors />
                     <FAQs />
-                    </section>
-                    <section> 
-                        <Ending />
-                    </section>
-
+                    <Ending />
                     {/* Chatbot */}
                     {isChatbotVisible && <Chatbot onClose={toggleChatbot} />}
                     
                     {/* Chatbot toggle icon */}
                     {!isChatbotVisible && (
-                        <div className="fixed bottom-10 right-10 cursor-pointer z-[9999]" onClick={toggleChatbot}>
-                            <img src="chat-icon.png" alt="Chatbot Icon" className="w-12 h-12" />
+                        <div className="sticky bottom-10 left-10 cursor-pointer z-[9999]" onClick={toggleChatbot}>
+                            <img src="/src/assets/pictures/chatbot.png" alt="ChatbotIcon" className="w-12 h-12" />
                         </div>
                     )}
                 </div>

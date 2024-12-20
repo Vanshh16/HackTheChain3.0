@@ -33,7 +33,7 @@ function Chatbot({ onClose }) {
     };
 
     return (
-        <div className="sticky bottom-10 right-10 bg-white rounded-lg shadow-lg p-6 w-80 z-50">
+        <div className="sticky bottom-10 left-10 bg-white rounded-lg shadow-lg p-6 w-80 z-50">
             <div className="flex justify-between items-center">
                 <h2 className="text-2xl font-bold text-gray-800 mb-4">Chatbot</h2>
                 {/* Close Button */}
