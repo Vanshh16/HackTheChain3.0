@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './Components/Navbar';
 import FAQs from './Components/FAQs';
 import Home from './Components/Home';
-import ContactUs from './Components/ContactUs';
 import Sponsors from './Components/Sponsors';
 import About from './Components/About';
 import Prizes from './Components/Prizes.jsx';
@@ -50,7 +49,7 @@ function ScreenOpen() {
                     <Navbar />
                     <Home />
 
-                    <section id="about" style={{ padding: '5px', background: '#d1d1d1' }}>
+                    <section>
                         <About />
                     </section>
                     
@@ -68,7 +67,7 @@ function ScreenOpen() {
                        <Sponsors />
                     </section>
                     <section>
-                       <FAQs />
+                    <FAQs />
                     </section>
                     <section> 
                         <Ending />
