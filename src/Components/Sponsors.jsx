@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sponsors = () => {
   return (
-    <section className="w-full min-h-[300vh] bg-black overflow-x-hidden ">
+    <section className="w-full min-h-[100vh] bg-black overflow-x-hidden ">
     <div className="text-white">
       <div className="container mx-auto py-20 text-center">
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold">Sponsors</h1>
@@ -16,7 +16,7 @@ const Sponsors = () => {
         </p>
 
         {/* Platinum Sponsor */}
-        <div className="relative w-[90%] mx-auto mt-10 md:mt-16 px-6 md:px-[60px] py-4 md:py-[26px] rounded-2xl bg-[linear-gradient(182deg,_rgb(70,70,70)_-65%,_rgba(70,70,70,0.15)_98.55%)] hover:bg-[linear-gradient(rgba(53,225,255,0.4)_-50%,_rgba(58,58,58,0.15)_50%)] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-lg before:bg-[linear-gradient(rgba(53,225,255,0.4)_-6.4%,_rgba(58,58,58,0.15)_99.89%)] before:transition-opacity before:duration-500 before:ease-linear before:opacity-0 hover:before:opacity-100 backdrop-blur-0 before:bg-opacity-30">
+        <div className="relative w-[90%] mx-auto mt-10 md:mt-16 px-6 md:px-[60px] py-3 md:py-[23px] rounded-2xl bg-[linear-gradient(182deg,_rgb(70,70,70)_-65%,_rgba(70,70,70,0.15)_98.55%)] hover:bg-[linear-gradient(rgba(53,225,255,0.4)_-50%,_rgba(58,58,58,0.15)_50%)] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-lg before:bg-[linear-gradient(rgba(53,225,255,0.4)_-6.4%,_rgba(58,58,58,0.15)_99.89%)] before:transition-opacity before:duration-500 before:ease-linear before:opacity-0 hover:before:opacity-100 backdrop-blur-0 before:bg-opacity-30">
           <div className="flex flex-col items-center text-center gap-4 md:gap-6">
             <h3 className="text-3xl md:text-4xl font-extrabold hover:text-black pt-6 md:pt-8">Platinum Sponsor</h3>
             <div className="grid grid-cols-1 gap-4">
