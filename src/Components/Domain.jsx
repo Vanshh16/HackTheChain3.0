@@ -10,10 +10,15 @@ const Domains = () => {
       <div className="domains-grid">
         <div className="domain-card">
           <span className="icon">
+
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13 2L3 14H10V22L20 10H13V2Z" fill="#333"/>
-          <path d="M13 2L3 14H10V22L20 10H13V2Z" stroke="#000" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M12 2L2 14H9V22L19 10H12V2Z" fill="#808080"/>
+              <path d="M12 2L2 14H9V22L19 10H12V2Z" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M12 2L2 14H9V22L19 10H12V2Z" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
           </svg>
+
+
+          
           </span>
           <h2 className='heading'>WEB DEVELOPMENT</h2>
           <p>Develop innovative solutions that uses web technologies to sovle the problems efficiently and can actually bring some innovation which benefits the users .</p>
@@ -21,9 +26,13 @@ const Domains = () => {
         <div className="domain-card">
           <span className="icon">
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13 2L3 14H10V22L20 10H13V2Z" fill="#333"/>
-          <path d="M13 2L3 14H10V22L20 10H13V2Z" stroke="#000" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M12 2L2 14H9V22L19 10H12V2Z" fill="#808080"/>
+              <path d="M12 2L2 14H9V22L19 10H12V2Z" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M12 2L2 14H9V22L19 10H12V2Z" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
           </svg>
+
+
+
 
          </span>
           <h2 className='heading'>APP DEVELOPMENT</h2>
@@ -32,8 +41,9 @@ const Domains = () => {
         <div className="domain-card">
           <span className="icon">
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13 2L3 14H10V22L20 10H13V2Z" fill="#333"/>
-          <path d="M13 2L3 14H10V22L20 10H13V2Z" stroke="#000" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M12 2L2 14H9V22L19 10H12V2Z" fill="#808080"/>
+              <path d="M12 2L2 14H9V22L19 10H12V2Z" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M12 2L2 14H9V22L19 10H12V2Z" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
           </svg>
           </span>
           <h2 className='heading'>AI/ML</h2>
@@ -42,8 +52,9 @@ const Domains = () => {
         <div className="domain-card">
           <span className="icon">
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13 2L3 14H10V22L20 10H13V2Z" fill="#333"/>
-          <path d="M13 2L3 14H10V22L20 10H13V2Z" stroke="#000" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M12 2L2 14H9V22L19 10H12V2Z" fill="#808080"/>
+              <path d="M12 2L2 14H9V22L19 10H12V2Z" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M12 2L2 14H9V22L19 10H12V2Z" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
           </svg>
           </span>
           <h2 className='heading'>ETHEREUM & BLOCKCHAIN</h2>
@@ -52,8 +63,9 @@ const Domains = () => {
         <div className="domain-card">
           <span className="icon">
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13 2L3 14H10V22L20 10H13V2Z" fill="#333"/>
-          <path d="M13 2L3 14H10V22L20 10H13V2Z" stroke="#000" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M12 2L2 14H9V22L19 10H12V2Z" fill="#808080"/>
+              <path d="M12 2L2 14H9V22L19 10H12V2Z" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M12 2L2 14H9V22L19 10H12V2Z" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
           </svg>
           </span>
           <h2 className='heading'>BUSINESS INNOVATION</h2>
@@ -62,8 +74,9 @@ const Domains = () => {
         <div className="domain-card">
           <span className="icon">
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13 2L3 14H10V22L20 10H13V2Z" fill="#333"/>
-          <path d="M13 2L3 14H10V22L20 10H13V2Z" stroke="#000" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M12 2L2 14H9V22L19 10H12V2Z" fill="#808080"/>
+              <path d="M12 2L2 14H9V22L19 10H12V2Z" stroke="#000" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M12 2L2 14H9V22L19 10H12V2Z" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
           </svg>
           </span>
           <h2 className='heading'>OPEN</h2>
