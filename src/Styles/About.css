@@ -47,13 +47,14 @@
   align-items: center;
   text-align: center;
   width: 200px; 
-  transition: transform 0.5s ease;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
   position: relative;
 }
 
 .team-member.center {
   filter: brightness(1.5);
-  transform: scale(1.1); 
+  transform: scale(1.0) translateX(0); 
 }
 
 .team-member-image {
