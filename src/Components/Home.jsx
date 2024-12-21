@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="relative bg-gray text-white py-12 min-h-screen text-center overflow-hidden"
+      className="relative bg-grey text-white py-12 min-h-screen text-center overflow-hidden"
     >
       <div className="absolute top-24 right-14">
         <Clock />
