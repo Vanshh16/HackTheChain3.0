@@ -1,4 +1,8 @@
 /* domains.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
 .domains-container {
     display: flex;
     flex-direction: column;
@@ -13,6 +17,8 @@
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 30px;
+    font-family: "Petrona", serif;
+
 }
 
 .domains-grid {
@@ -21,6 +27,9 @@
     gap: 20px;
     width: 100%;
     max-width: 1200px;
+}
+.heading{
+    font-family: "Petrona", serif;
 }
 
 .domain-card {
@@ -33,7 +42,7 @@
 }
 
 .domain-card .icon {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 10px;
     display: block;
   }
@@ -43,11 +52,13 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0 0 10px;
+
 }
 
 .domain-card p {
     font-size: 1rem;
     line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* hover effect  */
@@ -64,7 +75,13 @@
     z-index: 1;
 }
 
-.domain-card:hover h2 { text-decoration: underline; }
+.domain-card:hover h2 { 
+    color: #3fef54;
+ }
+
+ .domain-card .icon {
+    color: #000;
+ }
 
 
 @keyframes fadeIn { from { opacity: 0; transform: translateY(20px);
