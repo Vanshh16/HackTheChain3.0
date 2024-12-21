@@ -2,12 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(90, 219, 255, 0.89) black;
+    scroll-behavior: smooth;
+    border: 10px solid red;
   }
   
 html, body {
-    background-color: black;
+  background-color: black;
 }
-/* body, * {
-    cursor: none !important;
-    pointer-events: none;
-  } */
+
+::-webkit-scrollbar {
+  width: 2rem;
+  height: 2rem;
+}
+:-webkit-scrollbar-button {
+  display: none;
+}
