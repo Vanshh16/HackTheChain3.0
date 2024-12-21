@@ -1,6 +1,6 @@
 // Domains.jsx
 import React from 'react';
-import '../Styles/Domain.css';
+import '../Styles/Domains.css';
 
 
 const Domains = () => {
