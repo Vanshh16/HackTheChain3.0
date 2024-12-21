@@ -3,7 +3,6 @@ import React from 'react';
 import '../Styles/About.css'
 import Domains from './Domain';
 
-
 const teamData = [
   { id: 1, name: "Avinesh Rathore", imageUrl: "src/assets/pictures/avineshboss.jpg" },
   { id: 2, name: "Anany Srivastava", imageUrl: "src/assets/pictures/ananyboss.jpg" },
@@ -20,18 +19,22 @@ const Team = () => {
   return (
     <>
     <div className="team-container">
-      <h1>ABOUT US</h1>
-      <div className="aboutuscontent">
-      
-      Welcome to HackTheChain 2.0, the biggest hackathon in Kota City, presented by the Indian Institute of Information Technology Kota (IIIT Kota) in association with Codebase IIIT Kota. This hybrid event will be held on Devfolio with a prize pool of ₹1,50,000.
-      The hackathon unfolds in two thrilling rounds - Round 1 (Code Submission) is scheduled from February 16th to 18th, 2024, offering participants the opportunity to dive into project code submissions, engage in quizzes, and partake in various fun activities. The excitement peaks in Round 2 (Final Project Showcase) on February 23rd, 2024, where participants present their revolutionary ideas to a panel of judges, eagerly awaiting the announcement of results on the same day.
-      It serves as a dynamic platform for students nationwide to converge, exhibit their talents, and glean insights from industry experts within a competitive and collaborative framework. Our aim is to nurture innovation, creativity, and problem-solving skills while fostering a culture of collaboration and community development.
-      </div>
-
+      <h1 className="aboutus text-3xl font-semibold mb-8 text-blue-500">About Us</h1>
+      <p className="aboutusp text-base md:text-xl mb-10 text-gray-300 font-sans px-24">
+        <span>
+        Welcome to HackTheChain 3.0, the biggest hackathon in Kota City, presented by the Indian Institute of Information Technology Kota (IIIT Kota) in association with Codebase IIIT Kota.
+        This hybrid event will be hosted on Devfolio with a prize pool of ₹1,00,000.
+        </span>
+        <br/>
+        The hackathon unfolds in two thrilling rounds:
+        <strong className='text-blue-500'>Round 1 (Code Submission)</strong> is scheduled from February 16th to 18th, 2024, where participants will submit project code, engage in quizzes, and partake in fun activities. 
+        The excitement peaks in <strong className='text-blue-500'>Round 2 (Final Project Showcase)</strong> on February 23rd, 2024, where participants will present their revolutionary ideas to a panel of judges.
+        <br />
+        <div className='pt-4'>Join us for an incredible journey where innovation, creativity, and problem-solving come to life!</div>
+      </p>
       <div className='biggerboxteam'>
-      <h1 className="team-title">OUR TEAM</h1>
+      <h1 className="team-title"> OUR TEAM </h1>
       <div className="team-members">
-      
         {teamData.map((member) => (
           <div key={member.id} className="team-member">
             <div className="team-member-image">
