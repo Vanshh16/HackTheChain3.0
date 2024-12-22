@@ -40,8 +40,8 @@ const CustomCursor = () => {
   }, [lastMoveTime]);
 
   return (
-    <div className="fixed top-0 left-0 pointer-events-none z-[9999]">
-      {/* Hide the default cursor */}
+    <div className="fixed top-0 left-0 pointer-events-none z-[99]">
+      {/* Hide the default cursor globally */}
       <style>
         {`body, * { cursor: none !important; }`}
       </style>

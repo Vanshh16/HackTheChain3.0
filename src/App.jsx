@@ -11,11 +11,11 @@
 
     import './App.css';
     import AnimatedTransition from './Components/AnimatedTransition';
-import HamburgerMenu from './Components/HamBurgerMenu.jsx';
+    import HamburgerMenu from './Components/HamBurgerMenu.jsx';
 
     function App() {
         return (
-            <div className='flex flex-1'>
+            <div className='h-screen'>
                 <ScreenOpen />
             </div>
         );
@@ -23,7 +23,7 @@ import HamburgerMenu from './Components/HamBurgerMenu.jsx';
 
     function ScreenOpen() {
         const [isHomeVisible, setIsHomeVisible] = useState(false); 
-        const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+        const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth< 768);
 
 
         useEffect(() => {
@@ -50,7 +50,7 @@ import HamburgerMenu from './Components/HamBurgerMenu.jsx';
         };
 
         return (
-            <div className="w-screen h-screen bg-Gray-700">
+            <div className="bg-Gray-700">
                 {isHomeVisible ? (
                     <div className='justify-center '>
                         {}

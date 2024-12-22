@@ -1,4 +1,6 @@
 /* team.css */
+@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 .team-container {
   background-color: #000;
   color: #fff;
@@ -6,7 +8,18 @@
   text-align: center;
   width: 100%;
 }
-
+.aboutus{
+  font-family: "Petrona", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.aboutusp{
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
 .team-title {
   font-size: 3rem;
   font-weight: bold;

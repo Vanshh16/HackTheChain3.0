@@ -8,7 +8,7 @@
 .grid-container {
   position: relative;
   margin-top : -180px;
-  width: 100vw;
+  width: 100%;
   height: 60vh;
   display: flex;
   align-items: center;
@@ -107,3 +107,515 @@
     font-size: 2rem;
   }
 }
+
+
+@media screen and (max-width: 600px) {
+  .dhruv {
+    height: 200px;
+    margin-left: 180px;
+    margin-right: auto;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 2rem;
+    margin-left : -13rem
+  }
+}
+
+
+@media screen and (max-width: 360px) {
+  .dhruv {
+    height: 200px;
+    margin-left: 70px;
+    margin-right: auto;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 1.4rem;
+    margin-left : -24rem
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dhruv {
+    height: 200px;
+    margin-left: 120px;
+    margin-right: auto;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 1.4rem;
+    margin-left : -20rem
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .dhruv {
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    margin-top: -120px;
+    height: 50vh;
+  }
+
+  .grid-container .text h1 {
+    font-size: 4rem;
+  }
+}
+
+
+@media screen and (max-width: 1290px) {
+  .dhruv {
+    height: 300px;
+    margin-left: 530px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    margin-top: -120px;
+    height: 50vh;
+  }
+
+  .grid-container .text h1 {
+    font-size: 4rem;
+  }
+}
+
+
+@media screen and (max-width: 1230px) {
+  .dhruv {
+    height: 300px;
+    margin-left: 485px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    margin-top: -120px;
+    height: 50vh;
+  }
+
+  .grid-container .text h1 {
+    font-size: 4rem;
+  }
+}
+
+
+@media screen and (max-width: 1150px) {
+  .dhruv {
+    height: 300px;
+    margin-left: 435px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    margin-top: -120px;
+    height: 50vh;
+  }
+
+  .grid-container .text h1 {
+    font-size: 4rem;
+  }
+}
+
+
+@media screen and (max-width: 1080px) {
+  .dhruv {
+    height: 300px;
+    margin-left: 385px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    margin-top: -120px;
+    height: 50vh;
+  }
+
+  .grid-container .text h1 {
+    font-size: 4rem;
+  }
+}
+
+
+
+@media screen and (max-width: 920px) {
+  .dhruv {
+    height: 300px;
+    margin-left: 300px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    margin-top: -120px;
+    height: 50vh;
+  }
+
+  .grid-container .text h1 {
+    font-size: 4rem;
+  }
+}
+
+
+@media screen and (max-width: 832px) {
+  .dhruv {
+    height: 300px;
+    margin-left: 250px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    margin-top: -120px;
+    height: 50vh;
+  }
+
+  .grid-container .text h1 {
+    font-size: 4rem;
+  }
+}
+
+
+
+@media screen and (max-width: 762px) {
+  .dhruv {
+    height: 300px;
+    margin-left: 130px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 2.4rem;
+    margin-left :-12rem
+  }
+}
+
+
+@media screen and (max-width: 730px) {
+  .dhruv {
+    height: 300px;
+    margin-left: 200px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 2.4rem;
+    margin-left :1rem
+  }
+}
+
+
+@media screen and (max-width: 660px) {
+  .dhruv {
+    height: 300px;
+    margin-left: 180px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 2.4rem;
+    margin-left :-4rem
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .dhruv {
+    height: 300px;
+    margin-left: 180px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 2.4rem;
+    margin-left :-7rem
+  }
+}
+
+
+@media screen and (max-width: 520px) {
+  .dhruv {
+    height: 300px;
+    margin-left: 120px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 1.8rem;
+    margin-left :-13rem
+  }
+}
+
+
+@media screen and (max-width: 580px) {
+  .dhruv {
+    height: 300px;
+    margin-left: 140px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 1.8rem;
+    margin-left :-10rem
+  }
+}
+
+
+@media screen and (max-width: 505px) {
+  .dhruv {
+    height: 300px;
+    margin-left: 110px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 1.4rem;
+    margin-left :-12rem
+  }
+}
+
+
+
+@media screen and (max-width: 440px) {
+  .dhruv {
+    height: 200px;
+    margin-left: 120px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 1.4rem;
+    margin-left :1rem
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .dhruv {
+    height: 180px;
+    margin-left: 100px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 1.2rem;
+    margin-left :-22rem
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .dhruv {
+    height: 150px;
+    margin-left: 90px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 1.0rem;
+    margin-left :-25rem
+  }
+}
+
+@media screen and (max-width: 377px) {
+  .dhruv {
+    height: 150px;
+    margin-left: 120px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 1.0rem;
+    margin-left :1rem; 
+    margin-top : 2rem;
+  }
+}
+
+
+@media screen and (max-width: 395px) {
+  .dhruv {
+    height: 150px;
+    margin-left: 120px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 1.0rem;
+    margin-left :0rem; 
+    margin-top : 2rem;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .dhruv {
+    height: 300px;
+    margin-left: 120px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 1.8rem;
+    margin-left :0rem; 
+    margin-top : 2rem;
+  }
+}
+
+@media screen and (max-width: 347px) {
+  .dhruv {
+    height: 150px;
+    margin-left: 110px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 1.0rem;
+    margin-left :10rem; 
+    margin-top : 2rem;
+  }
+}
+
+
+@media screen and (max-width: 415px) {
+  .dhruv {
+    height: 240px;
+    margin-left: 90px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 1.8rem;
+    margin-left :0rem; 
+    margin-top : 2rem;
+  }
+}
+
+@media screen and (max-width: 433px) {
+  .dhruv {
+    height: 240px;
+    margin-left: 100px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 1.8rem;
+    margin-left :0rem; 
+    margin-top : 2rem;
+  }
+}
+
