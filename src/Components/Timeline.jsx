@@ -4,8 +4,8 @@ import '../Styles/Timeline.css';
 const timelineEvents = [
   { id: 1, title: "Registration", date: "2025-01-10", description: "Registration period for HackTheChain 3.0" },
   { id: 2, title: "Acceptance Letter rollout", date: "2025-01-20", description: "Mails sent to accepted hackers" },
-  { id: 3, title: "Hacking Hours", date: "2024-02-15", description: "The hackathon period" },
-  { id: 4, title: "Winner Announcement", date: "2024-02-16", description: "Winner Announcement and Closing Ceremony" },
+  { id: 3, title: "Hacking Hours", date: "2025-02-15", description: "The hackathon period" },
+  { id: 4, title: "Winner Announcement", date: "2025-02-16", description: "Winner Announcement and Closing Ceremony" },
 ];
 
 const findNearestEvent = (events) => {
