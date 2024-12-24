@@ -27,7 +27,7 @@
 
 
         useEffect(() => {
-            const hasAnimationPlayed = sessionStorage.getItem('animationPlayed');
+            const hasAnimationPlayed = sessionStorage.getItem('animationsPlayed');
 
             if (!hasAnimationPlayed) {
                 setIsHomeVisible(false); 

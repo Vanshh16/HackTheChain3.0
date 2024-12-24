@@ -1008,6 +1008,37 @@ figure:hover {
   }
 }
 
+/* @media (max-height: 1280px) {
+  figure {
+    width: 80px; 
+    height: 80px; 
+  }
+
+  .clock {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .face {
+    margin-left : -80px;
+  }
+
+  .front {
+    transform: translate3d(4px, 0, 69px);
+    background: #111;
+    text-align : center;
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translate3d(30px, 0, 37px);
+    background: #151515;
+  }
+  
+  .top {
+    transform: rotateX(90deg) translate3d(10px, 20px, 26px);
+    background: #222;
+  }
+} */
 
 
 @media (max-height: 433px) {
