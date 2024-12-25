@@ -1,8 +1,7 @@
-/* domains.css */
-
 @import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
+
 .domains-container {
     display: flex;
     flex-direction: column;
@@ -18,7 +17,6 @@
     font-weight: bold;
     margin-bottom: 30px;
     font-family: "Petrona", serif;
-
 }
 
 .domains-grid {
@@ -28,7 +26,8 @@
     width: 100%;
     max-width: 1200px;
 }
-.heading{
+
+.heading {
     font-family: "Petrona", serif;
 }
 
@@ -45,14 +44,12 @@
     font-size: 1.8rem;
     margin-bottom: 10px;
     display: block;
-  }
-  
+}
 
 .domain-card h2 {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0 0 10px;
-
 }
 
 .domain-card p {
@@ -61,9 +58,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* hover effect  */
-
-.title{
+/* Hover Effects */
+.title {
     animation: bounce 1s ease-in-out;
 }
 
@@ -75,34 +71,97 @@
     z-index: 1;
 }
 
-.domain-card:hover h2 { 
+.domain-card:hover h2 {
     color: #3fef54;
- }
-
- .domain-card .icon {
-    color: #000;
- }
-
-
-@keyframes fadeIn { from { opacity: 0; transform: translateY(20px);
- }
-  to { 
-    opacity: 1; transform: translateY(0); 
-} 
-} 
-.domain-card { animation: fadeIn 0.5s ease-in-out; }
-
-
-
-
-@keyframes bounce { 0%, 20%, 50%, 80%, 100% { 
-    
-    transform: translateY(0); 
-} 40% { transform: translateY(-30px);
- } 
-
-60% { transform: translateY(-15px);
- } 
 }
 
+.domain-card .icon {
+    color: #000;
+}
 
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.domain-card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .domains-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .domain-card h2 {
+        font-size: 1.3rem;
+    }
+
+    .domain-card p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .domains-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .domain-card {
+        padding: 15px;
+    }
+
+    .domain-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .domain-card p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .domain-card {
+        padding: 10px;
+    }
+
+    .domain-card h2 {
+        font-size: 1rem;
+    }
+
+    .domain-card p {
+        font-size: 0.85rem;
+    }
+}

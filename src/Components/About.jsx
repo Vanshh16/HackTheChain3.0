@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import '../Styles/About.css';
 import Domains from './Domain';
 
-
 const teamData = [
   { id: 1, name: "Avinesh Rathore", imageUrl: "src/assets/pictures/avineshboss.jpg" },
   { id: 2, name: "Anany Srivastava", imageUrl: "src/assets/pictures/ananyboss.jpg" },
@@ -44,7 +43,7 @@ const Team = () => {
   return (
     <div className="team-container">
       <h1 className="aboutus text-3xl font-semibold mb-8 text-blue-500">About Us</h1>
-      <p className="aboutusp text-base md:text-xl mb-10 text-gray-300 font-sans px-24">
+      <p className="aboutusp text-base md:text-xl mb-10 text-gray-300 font-sans px-4 md:px-24">
         <span>Welcome to HackTheChain 3.0, the biggest hackathon in Kota City, presented by the Indian Institute of Information Technology Kota (IIIT Kota) in association with Codebase IIIT Kota.
         This hybrid event will be hosted on Devfolio with a prize pool of ₹1,00,000.</span>
         <br />
@@ -55,24 +54,16 @@ const Team = () => {
         <div className="pt-4">Join us for an incredible journey where innovation, creativity, and problem-solving come to life!</div>
       </p>
 
-
-
-
       <div className="biggerboxteam">
         <h1 className="team-title">OUR TEAM</h1>
         <div className="team-members">
           {visibleMembers.map((member, index) => (
             <div key={member.id} className={`team-member ${index === 1 ? 'center' : ''}`}>
-
-
-          <div class="testimonial-container">
-              <div className="team-member-image">
-                <img src={member.imageUrl} />
+              <div className="testimonial-container">
+                <div className="team-member-image">
+                  <img src={member.imageUrl} alt={member.name} />
+                </div>
               </div>
-          </div>
-
-
-
               <p className="team-member-name">{member.name}</p>
             </div>
           ))}
@@ -88,15 +79,9 @@ const Team = () => {
         </div>
       </div>
 
-
-<div className='domainbox'>
-      <Domains />
+      <div className="domainbox">
+        <Domains />
       </div>
-    
-
-
-
-
     </div>
   );
 };
