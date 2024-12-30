@@ -3,7 +3,6 @@ import Clock from './Clock';
 import '../Styles/Home.css'
 
 const Home = () => {
-
   return (
     <section
       id="home"

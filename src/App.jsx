@@ -66,7 +66,7 @@ function ScreenOpen() {
                     <section id="timeline">
                         <Timeline />
                     </section>
-                    <section id="stats">
+                    <section id="stats1">
                         <Stats />
                     </section>
                     <section id="prizes">

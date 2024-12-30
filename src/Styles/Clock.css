@@ -71,127 +71,10 @@ figure:hover {
 
 
 
-
-
-@media (max-width: 1024px) and (max-height: 600px) {
+@media (max-width: 1280px) {
   figure {
     width: 80px; 
     height: 80px; 
-  
-  }
-
-  .clock {
-    font-size: 60px;
-    line-height: 65px;
-  }
-
-  .front {
-    transform: translate3d(0, 0, 40px);
-    background: #111;
-  }
-  
-  .left {
-    transform: rotateY(-90deg) translate3d(0, 0, 40px);
-    background: #151515;
-  }
-  
-  .top {
-    transform: rotateX(90deg) translate3d(0, 0, 40px);
-    background: #222;
-  }
-}
-
-@media (max-width: 720px) {
-  figure {
-    width: 75px; 
-    height: 75px; 
-  
-  }
-
-  .clock {
-    font-size: 60px;
-    line-height: 65px;
-  }
-
-  .front {
-    transform: translate3d(0, 0, 38px);
-    background: #111;
-  }
-  
-  .left {
-    transform: rotateY(-90deg) translate3d(0, 0, 38px);
-    background: #151515;
-  }
-  
-  .top {
-    transform: rotateX(90deg) translate3d(0, 0, 38px);
-    background: #222;
-  }
-}
-
-
-@media (max-width: 500px) {
-  figure {
-    width: 75px; 
-    height: 75px; 
-  }  
-
-  .clock {
-    font-size: 60px;
-    line-height: 65px;
-  }
-
-  .front {
-    transform: translate3d(0, 0, 38px);
-    background: #111;
-    margin-left: 40px;
-  }
-  
-  .left {
-    transform: rotateY(-90deg) translate3d(0, 0, 38px);
-    background: #151515;
-  }
-  
-  .top {
-    transform: rotateX(90deg) translate3d(0, 0, 38px);
-    background: #222;
-  }
-}
-
-
-@media (max-width: 800px) {
-  figure {
-    width: 90px; 
-    height: 90px; 
-  }  
-
-  .clock {
-    font-size: 80px;
-    line-height: 65px;
-  }
-
-  .front {
-    transform: translate3d(-40px, 4px, 45px);
-    background: #111;
-    margin-left: 40px;
-  }
-  
-  .left {
-    transform: rotateY(-90deg) translate3d(0, 0, 45px);
-    background: #151515;
-  }
-  
-  .top {
-    transform: rotateX(90deg) translate3d(0, 0, 45px);
-    background: #222;
-  }
-}
-
-
-@media (max-height: 700px) {
-  figure {
-    width: 10px; 
-    height: 10px; 
   }
 
   .clock {
@@ -200,28 +83,27 @@ figure:hover {
   }
 
   .face {
-    margin-left : -10px;
+    margin-left : -80px;
   }
 
   .front {
-    transform: translate3d(10px, 0, 70px);
+    transform: translate3d(4px, 0, 69px);
     background: #111;
     text-align : center;
   }
   
   .left {
-    transform: rotateY(-90deg) translate3d(0, 0, 10px);
+    transform: rotateY(-90deg) translate3d(30px, 0, 37px);
     background: #151515;
   }
   
   .top {
-    transform: rotateX(90deg) translate3d(0, 0, 10px);
+    transform: rotateX(90deg) translate3d(10px, 20px, 26px);
     background: #222;
   }
 }
 
-
-@media (max-height: 900px) {
+@media (max-width: 1200px) {
   figure {
     width: 80px; 
     height: 80px; 
@@ -253,8 +135,35 @@ figure:hover {
   }
 }
 
+@media (max-width: 1024px){
+  figure {
+    width: 80px; 
+    height: 80px; 
+  
+  }
 
-@media (max-height: 1000px) {
+  .clock {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .front {
+    transform: translate3d(0, 0, 40px);
+    background: #111;
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translate3d(0, 0, 40px);
+    background: #151515;
+  }
+  
+  .top {
+    transform: rotateX(90deg) translate3d(0, 0, 40px);
+    background: #222;
+  }
+}
+
+@media (max-width: 1000px) {
   figure {
     width: 80px; 
     height: 80px; 
@@ -286,8 +195,7 @@ figure:hover {
   }
 }
 
-
-@media (max-height: 1200px) {
+@media (max-width: 900px) {
   figure {
     width: 80px; 
     height: 80px; 
@@ -319,8 +227,7 @@ figure:hover {
   }
 }
 
-
-@media (max-width: 720px) {
+@media (max-width: 914px) {
   figure {
     width: 80px; 
     height: 80px; 
@@ -352,184 +259,33 @@ figure:hover {
   }
 }
 
-
-
-
-
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   figure {
-    width: 80px; 
-    height: 80px; 
-  }
+    width: 90px; 
+    height: 90px; 
+  }  
 
   .clock {
-    font-size: 60px;
+    font-size: 80px;
     line-height: 65px;
   }
 
-  .face {
-    margin-left : -30px;
-  }
-
   .front {
-    transform: translate3d(4px, 0, 69px);
+    transform: translate3d(-40px, 4px, 45px);
     background: #111;
-    text-align : center;
+    margin-left: 40px;
   }
   
   .left {
-    transform: rotateY(-90deg) translate3d(30px, 0, 37px);
+    transform: rotateY(-90deg) translate3d(0, 0, 45px);
     background: #151515;
   }
   
   .top {
-    transform: rotateX(90deg) translate3d(10px, 20px, 26px);
+    transform: rotateX(90deg) translate3d(0, 0, 45px);
     background: #222;
   }
 }
-
-
-
-@media (max-width: 680px) {
-  figure {
-    width: 80px; 
-    height: 80px; 
-  }
-
-  .clock {
-    font-size: 60px;
-    line-height: 65px;
-  }
-
-  .face {
-    margin-left : -50px;
-  }
-
-  .front {
-    transform: translate3d(4px, 0, 69px);
-    background: #111;
-    text-align : center;
-  }
-  
-  .left {
-    transform: rotateY(-90deg) translate3d(30px, 0, 37px);
-    background: #151515;
-  }
-  
-  .top {
-    transform: rotateX(90deg) translate3d(10px, 20px, 26px);
-    background: #222;
-  }
-}
-
-
-
-
-
-
-@media (max-width: 600px) {
-  figure {
-    width: 80px; 
-    height: 80px; 
-  }
-
-  .clock {
-    font-size: 60px;
-    line-height: 65px;
-  }
-
-  .face {
-    margin-left : -150px;
-  }
-
-  .front {
-    transform: translate3d(4px, 0, 69px);
-    background: #111;
-    text-align : center;
-  }
-  
-  .left {
-    transform: rotateY(-90deg) translate3d(30px, 0, 37px);
-    background: #151515;
-  }
-  
-  .top {
-    transform: rotateX(90deg) translate3d(10px, 20px, 26px);
-    background: #222;
-  }
-}
-
-
-@media (max-width: 520px) {
-  figure {
-    width: 80px; 
-    height: 80px; 
-  }
-
-  .clock {
-    font-size: 60px;
-    line-height: 65px;
-  }
-
-  .face {
-    margin-left : -180px;
-  }
-
-  .front {
-    transform: translate3d(4px, 0, 69px);
-    background: #111;
-    text-align : center;
-  }
-  
-  .left {
-    transform: rotateY(-90deg) translate3d(30px, 0, 37px);
-    background: #151515;
-  }
-  
-  .top {
-    transform: rotateX(90deg) translate3d(10px, 20px, 26px);
-    background: #222;
-  }
-}
-
-
-@media (max-width: 500px) {
-  figure {
-    width: 50px; 
-    height: 50px; 
-  }
-
-  .clock {
-    font-size: 40px;
-    line-height: 30px;
-  }
-
-  .face {
-    margin-left : -280px;
-  }
-
-  .front {
-    transform: translate3d(9px, -3px, 47px);
-    background: #111;
-    text-align : center;
-  }
-  
-  .left {
-    transform: rotateY(-90deg) translate3d(20px, -1px, 13px);
-    background: #151515;
-  }
-  
-  .top {
-    transform: rotateX(90deg) translate3d(10px, 20px, 26px);
-    background: #222;
-  }
-
-  figure:hover {
-    transform: rotateX(-30deg) rotateY(20deg);
-  }
-}
-
-
 
 @media (max-width: 730px) {
   figure {
@@ -567,6 +323,97 @@ figure:hover {
   }
 }
 
+@media (max-width: 720px) {
+  figure {
+    width: 75px; 
+    height: 75px; 
+  
+  }
+
+  .clock {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .front {
+    transform: translate3d(0, 0, 38px);
+    background: #111;
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translate3d(0, 0, 38px);
+    background: #151515;
+  }
+  
+  .top {
+    transform: rotateX(90deg) translate3d(0, 0, 38px);
+    background: #222;
+  }
+}
+
+@media (max-width: 700px) {
+  figure {
+    width: 10px; 
+    height: 10px; 
+  }
+
+  .clock {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .face {
+    margin-left : -10px;
+  }
+
+  .front {
+    transform: translate3d(10px, 0, 70px);
+    background: #111;
+    text-align : center;
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translate3d(0, 0, 10px);
+    background: #151515;
+  }
+  
+  .top {
+    transform: rotateX(90deg) translate3d(0, 0, 10px);
+    background: #222;
+  }
+}
+
+@media (max-width: 680px) {
+  figure {
+    width: 80px; 
+    height: 80px; 
+  }
+
+  .clock {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .face {
+    margin-left : -50px;
+  }
+
+  .front {
+    transform: translate3d(4px, 0, 69px);
+    background: #111;
+    text-align : center;
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translate3d(30px, 0, 37px);
+    background: #151515;
+  }
+  
+  .top {
+    transform: rotateX(90deg) translate3d(10px, 20px, 26px);
+    background: #222;
+  }
+}
 
 @media (max-width: 660px) {
   figure {
@@ -640,30 +487,29 @@ figure:hover {
   }
 }
 
-
-@media (max-width: 520px) {
+@media (max-width: 600px) {
   figure {
-    width: 50px; 
-    height: 50px; 
+    width: 80px; 
+    height: 80px; 
   }
 
   .clock {
-    font-size: 40px;
-    line-height: 30px;
+    font-size: 60px;
+    line-height: 65px;
   }
 
   .face {
-    margin-left : -220px;
+    margin-left : -150px;
   }
 
   .front {
-    transform: translate3d(9px, -3px, 47px);
+    transform: translate3d(4px, 0, 69px);
     background: #111;
     text-align : center;
   }
   
   .left {
-    transform: rotateY(-90deg) translate3d(20px, -1px, 13px);
+    transform: rotateY(-90deg) translate3d(30px, 0, 37px);
     background: #151515;
   }
   
@@ -671,12 +517,7 @@ figure:hover {
     transform: rotateX(90deg) translate3d(10px, 20px, 26px);
     background: #222;
   }
-
-  figure:hover {
-    transform: rotateX(-30deg) rotateY(20deg);
-  }
 }
-
 
 @media (max-width: 580px) {
   figure {
@@ -714,6 +555,73 @@ figure:hover {
   }
 }
 
+@media (max-width: 540px) {
+  figure {
+    width: 50px; 
+    height: 50px; 
+  }
+
+  .clock {
+    font-size: 40px;
+    line-height: 30px;
+  }
+
+  .face {
+    margin-left : 20px;
+  }
+
+  .front {
+    transform: translate3d(9px, -3px, 47px);
+    background: #111;
+    text-align : center;
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translate3d(20px, -1px, 13px);
+    background: #151515;
+  }
+  
+  .top {
+    transform: rotateX(90deg) translate3d(10px, 20px, 26px);
+    background: #222;
+  }
+
+  figure:hover {
+    transform: rotateX(-30deg) rotateY(20deg);
+  }
+}
+
+@media (max-width: 520px) {
+  figure {
+    width: 80px; 
+    height: 80px; 
+  }
+
+  .clock {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .face {
+    margin-left : -180px;
+  }
+
+  .front {
+    transform: translate3d(4px, 0, 69px);
+    background: #111;
+    text-align : center;
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translate3d(30px, 0, 37px);
+    background: #151515;
+  }
+  
+  .top {
+    transform: rotateX(90deg) translate3d(10px, 20px, 26px);
+    background: #222;
+  }
+}
 
 @media (max-width: 505px) {
   figure {
@@ -748,6 +656,34 @@ figure:hover {
 
   figure:hover {
     transform: rotateX(-30deg) rotateY(20deg);
+  }
+}
+
+@media (max-width: 500px) {
+  figure {
+    width: 75px; 
+    height: 75px; 
+  }  
+
+  .clock {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .front {
+    transform: translate3d(0, 0, 38px);
+    background: #111;
+    margin-left: 40px;
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translate3d(0, 0, 38px);
+    background: #151515;
+  }
+  
+  .top {
+    transform: rotateX(90deg) translate3d(0, 0, 38px);
+    background: #222;
   }
 }
 
@@ -787,6 +723,77 @@ figure:hover {
   }
 }
 
+@media (max-width: 433px) {
+  figure {
+    width: 30px; 
+    height: 30px; 
+  }
+
+  .clock {
+    font-size: 28px;
+    line-height: 14px;
+  }
+
+  .face {
+    margin-left : 20px;
+  }
+
+  .front {
+    transform: translate3d(9px, -3px, 47px);
+    background: #111;
+    text-align : center;
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translate3d(20px, -1px, 5px);
+    background: #151515;
+  }
+  
+  .top {
+    transform: rotateX(90deg) translate3d(10px, 20px, 14px);
+    background: #222;
+  }
+
+  figure:hover {
+    transform: rotateX(-20deg) rotateY(13deg);
+  }
+}
+
+@media (max-width: 415px) {
+  figure {
+    width: 30px; 
+    height: 30px; 
+  }
+
+  .clock {
+    font-size: 28px;
+    line-height: 14px;
+  }
+
+  .face {
+    margin-left : 30px;
+  }
+
+  .front {
+    transform: translate3d(9px, -3px, 47px);
+    background: #111;
+    text-align : center;
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translate3d(20px, -1px, 5px);
+    background: #151515;
+  }
+  
+  .top {
+    transform: rotateX(90deg) translate3d(10px, 20px, 14px);
+    background: #222;
+  }
+
+  figure:hover {
+    transform: rotateX(-20deg) rotateY(13deg);
+  }
+}
 
 @media (max-width: 400px) {
   figure {
@@ -824,7 +831,185 @@ figure:hover {
   }
 }
 
+@media (max-width: 395px) {
+  figure {
+    width: 30px; 
+    height: 30px; 
+  }
 
+  .clock {
+    font-size: 28px;
+    line-height: 14px;
+  }
+
+  .face {
+    margin-left : 20px;
+  }
+
+  .front {
+    transform: translate3d(9px, -3px, 47px);
+    background: #111;
+    text-align : center;
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translate3d(20px, -1px, 5px);
+    background: #151515;
+  }
+  
+  .top {
+    transform: rotateX(90deg) translate3d(10px, 20px, 14px);
+    background: #222;
+  }
+
+  figure:hover {
+    transform: rotateX(-20deg) rotateY(13deg);
+  }
+}
+
+@media (max-width: 377px) {
+  figure {
+    width: 30px; 
+    height: 30px; 
+  }
+
+  .clock {
+    font-size: 28px;
+    line-height: 14px;
+  }
+
+  .face {
+    margin-left : 30px;
+  }
+
+  .front {
+    transform: translate3d(9px, -3px, 47px);
+    background: #111;
+    text-align : center;
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translate3d(20px, -1px, 5px);
+    background: #151515;
+  }
+  
+  .top {
+    transform: rotateX(90deg) translate3d(10px, 20px, 14px);
+    background: #222;
+  }
+
+  figure:hover {
+    transform: rotateX(-20deg) rotateY(13deg);
+  }
+}
+
+@media (max-width: 362px) {
+  figure {
+    width: 30px; 
+    height: 30px; 
+  }
+
+  .clock {
+    font-size: 28px;
+    line-height: 14px;
+  }
+
+  .face {
+    margin-left : 30px;
+  }
+
+  .front {
+    transform: translate3d(9px, -3px, 47px);
+    background: #111;
+    text-align : center;
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translate3d(20px, -1px, 5px);
+    background: #151515;
+  }
+  
+  .top {
+    transform: rotateX(90deg) translate3d(10px, 20px, 14px);
+    background: #222;
+  }
+
+  figure:hover {
+    transform: rotateX(-20deg) rotateY(13deg);
+  }
+}
+
+@media (max-width: 347px) {
+  figure {
+    width: 30px; 
+    height: 30px; 
+  }
+
+  .clock {
+    font-size: 28px;
+    line-height: 14px;
+  }
+
+  .face {
+    margin-left : -120px;
+  }
+
+  .front {
+    transform: translate3d(9px, -3px, 47px);
+    background: #111;
+    text-align : center;
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translate3d(20px, -1px, 5px);
+    background: #151515;
+  }
+  
+  .top {
+    transform: rotateX(90deg) translate3d(10px, 20px, 14px);
+    background: #222;
+  }
+
+  figure:hover {
+    transform: rotateX(-20deg) rotateY(13deg);
+  }
+}
+
+@media (max-width: 345px) {
+  figure {
+    width: 30px; 
+    height: 30px; 
+  }
+
+  .clock {
+    font-size: 28px;
+    line-height: 14px;
+  }
+
+  .face {
+    margin-left : 40px;
+  }
+
+  .front {
+    transform: translate3d(9px, -3px, 47px);
+    background: #111;
+    text-align : center;
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translate3d(20px, -1px, 5px);
+    background: #151515;
+  }
+  
+  .top {
+    transform: rotateX(90deg) translate3d(10px, 20px, 14px);
+    background: #222;
+  }
+
+  figure:hover {
+    transform: rotateX(-20deg) rotateY(13deg);
+  }
+}
 
 @media (max-width: 330px) {
   figure {
@@ -862,213 +1047,4 @@ figure:hover {
   }
 }
 
-@media (max-width: 375px) {
-  figure {
-    width: 20px; 
-    height: 20px; 
-  }
 
-  .clock {
-    font-size: 28px;
-    line-height: 14px;
-  }
-
-  .face {
-    margin-left : 40px;
-  }
-
-  .front {
-    transform: translate3d(9px, -3px, 47px);
-    background: #111;
-    text-align : center;
-  }
-  
-  .left {
-    transform: rotateY(-90deg) translate3d(20px, -1px, 5px);
-    background: #151515;
-  }
-  
-  .top {
-    transform: rotateX(90deg) translate3d(10px, 20px, 14px);
-    background: #222;
-  }
-
-  figure:hover {
-    transform: rotateX(-20deg) rotateY(13deg);
-  }
-}
-
-
-@media (max-width: 395px) {
-  figure {
-    width: 50px; 
-    height: 50px; 
-  }
-
-  .clock {
-    font-size: 40px;
-    line-height: 30px;
-  }
-
-  .face {
-    margin-left : 20px;
-  }
-
-  .front {
-    transform: translate3d(9px, -3px, 47px);
-    background: #111;
-    text-align : center;
-  }
-  
-  .left {
-    transform: rotateY(-90deg) translate3d(20px, -1px, 13px);
-    background: #151515;
-  }
-  
-  .top {
-    transform: rotateX(90deg) translate3d(10px, 20px, 26px);
-    background: #222;
-  }
-
-  figure:hover {
-    transform: rotateX(-30deg) rotateY(20deg);
-  }
-}
-
-
-@media (max-width: 540px) {
-  figure {
-    width: 50px; 
-    height: 50px; 
-  }
-
-  .clock {
-    font-size: 40px;
-    line-height: 30px;
-  }
-
-  .face {
-    margin-left : 20px;
-  }
-
-  .front {
-    transform: translate3d(9px, -3px, 47px);
-    background: #111;
-    text-align : center;
-  }
-  
-  .left {
-    transform: rotateY(-90deg) translate3d(20px, -1px, 13px);
-    background: #151515;
-  }
-  
-  .top {
-    transform: rotateX(90deg) translate3d(10px, 20px, 26px);
-    background: #222;
-  }
-
-  figure:hover {
-    transform: rotateX(-30deg) rotateY(20deg);
-  }
-}
-
-@media (max-width: 347px) {
-  figure {
-    width: 30px; 
-    height: 30px; 
-  }
-
-  .clock {
-    font-size: 28px;
-    line-height: 14px;
-  }
-
-  .face {
-    margin-left : 10px;
-  }
-
-  .front {
-    transform: translate3d(9px, -3px, 47px);
-    background: #111;
-    text-align : center;
-  }
-  
-  .left {
-    transform: rotateY(-90deg) translate3d(20px, -1px, 5px);
-    background: #151515;
-  }
-  
-  .top {
-    transform: rotateX(90deg) translate3d(10px, 20px, 14px);
-    background: #222;
-  }
-
-  figure:hover {
-    transform: rotateX(-20deg) rotateY(13deg);
-  }
-}
-
-/* @media (max-height: 1280px) {
-  figure {
-    width: 80px; 
-    height: 80px; 
-  }
-
-  .clock {
-    font-size: 60px;
-    line-height: 65px;
-  }
-
-  .face {
-    margin-left : -80px;
-  }
-
-  .front {
-    transform: translate3d(4px, 0, 69px);
-    background: #111;
-    text-align : center;
-  }
-  
-  .left {
-    transform: rotateY(-90deg) translate3d(30px, 0, 37px);
-    background: #151515;
-  }
-  
-  .top {
-    transform: rotateX(90deg) translate3d(10px, 20px, 26px);
-    background: #222;
-  }
-} */
-
-
-@media (max-height: 433px) {
-  figure {
-    width: 40px; 
-    height: 40px; 
-  }
-
-  .clock {
-    font-size: 60px;
-    line-height: 65px;
-  }
-
-  .face {
-    margin-left : -80px;
-  }
-
-  .front {
-    transform: translate3d(4px, 0, 69px);
-    background: #111;
-    text-align : center;
-  }
-  
-  .left {
-    transform: rotateY(-90deg) translate3d(30px, 0, 37px);
-    background: #151515;
-  }
-  
-  .top {
-    transform: rotateX(90deg) translate3d(10px, 20px, 26px);
-    background: #222;
-  }
-}
