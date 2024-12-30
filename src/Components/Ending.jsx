@@ -1,19 +1,20 @@
 import React from "react";
 import iiitk from "../assets/pictures/iiitk.png";
 import PendulumAnimation from "./PendulumAnimation";
+import "../Styles/Ending.css";
 
 const Third = () => {
   return (
-    <div className="min-h-screen bg-black text-white font-sans relative">
+    <div className="min-h-screen ayush  text-white  relative">
       {/* Background Stars */}
       <div className="absolute top-0 left-0 w-full h-full bg-[url('/path/to/your/stars_background_image')] bg-cover z-0"></div>
 
       {/* Navbar */}
-      <div className="flex justify-start p-4 pl-10 space-x-8 z-10 relative md:justify-center md:space-x-16">
+      {/* <div className="flex justify-start p-4 pl-10 space-x-8 z-10 relative md:justify-center md:space-x-16">
         <a href="#about" className="hover:text-gray-400 text-sm md:text-base">About Us</a>
         <a href="#contact" className="hover:text-gray-400 text-sm md:text-base">Contact Us</a>
         <a href="#sponsor" className="hover:text-gray-400 text-sm md:text-base">Sponsor Us</a>
-      </div>
+      </div> */}
 
       {/* About Section */}
       <div id="about" className="z-10 relative p-6 md:p-20 flex flex-col md:flex-row md:space-x-8 bg-gray-950">

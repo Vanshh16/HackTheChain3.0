@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
+import "../Styles/Navbar.css"
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,9 +10,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-black bg-opacity-50 h-16 flex justify-between items-center fixed w-full top-0 z-50 px-5 sm:px-10">
+    <nav className="bg-black ayush bg-opacity-50 h-16 flex justify-between items-center sticky top-0 z-50 px-5 sm:px-10">
       <div className="flex justify-between items-center w-full max-w-6xl">
-
         {/* Hamburger icon for small screens */}
         <div className="sm:hidden" onClick={toggleMenu}>
           <button className="text-white text-2xl">☰</button>
@@ -33,6 +33,7 @@ const Navbar = () => {
               Home
             </Link>
           </li>
+          
           <li>
             <Link
               to="about"
@@ -55,6 +56,16 @@ const Navbar = () => {
           </li>
           <li>
             <Link
+              to="stats"
+              className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
+              smooth={true}
+              duration={500}
+            >
+              Stats
+            </Link>
+          </li>
+          <li>
+            <Link
               to="sponsors"
               className="text-white text-lg sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
               smooth={true}
@@ -65,7 +76,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="faqs"
+              to="FAQs"
               className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
               smooth={true}
               duration={500}

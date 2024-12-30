@@ -30,48 +30,48 @@ const AnimatedTransition = ({ onAnimationComplete }) => {
     }, [onAnimationComplete]);
 
     return (
-        <div>
-            <div id="ui" style={{ opacity: flickering ? 0.5 : 1 }}>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
-                <div className="text">Hack THE Chain 3.0</div>
+        <div className='ayush'>
+            <div className='ayush' id="ui" style={{ opacity: flickering ? 0.5 : 1 }}>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
+                <div className="text ayush">Hack THE Chain 3.0</div>
             </div>
             {showNewPage && <Home />}
         </div>

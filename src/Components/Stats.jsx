@@ -44,8 +44,8 @@ const First = () => {
   ];
 
   return (
-    <div className="bg-black font-sans text-white py-40">
-      <div className="container bg-black mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div className="ayush font-sans text-white py-40">
+      <div className="ayush container  mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {stats.map((stat, index) => (
           <StatCard key={index} title={stat.title} value={stat.value} description={stat.description} />
         ))}
@@ -65,14 +65,14 @@ function StatCard({ title, value, description }) {
   });
 
   return (
-    <div ref={ref} className="text-center">
+    <div ref={ref} className="ayush text-center">
       <h2 className="text-4xl font-medium mb-2">
         <span className='number text-4xl bg-clip-text text-transparent leading-normal font-semibold'>
           <Number n={value} startAnimation={hasAnimated} />+
         </span>
       </h2>
-      <p className="text-xl font-medium font-sans mb-1">{title}</p>
-      <p className="text-gray-400 font-sans">{description}</p>
+      <p className="text-xl font-medium ayush  mb-1">{title}</p>
+      <p className="text-gray-400 ayush">{description}</p>
     </div>
   );
 }

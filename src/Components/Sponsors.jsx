@@ -2,7 +2,7 @@ import React from "react";
 
 const Sponsors = () => {
   return (
-    <section className="w-full min-h-[100vh] bg-black overflow-x-hidden">
+    <section className="w-full min-h-[100vh]  overflow-x-hidden">
       <div className="text-white">
         <div className="container mx-auto py-10 px-4 sm:px-6 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold">Sponsors</h1>
