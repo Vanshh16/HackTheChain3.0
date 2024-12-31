@@ -1,6 +1,5 @@
-// FAQs.jsx
-import React, { useState } from 'react';
-import '../Styles/FAQs.css'
+import { useState } from 'react';
+import '../Styles/FAQs.css';
 
 const faqsData = [
   { id: 1, question: "When and where is HackTheChain taking place?", answer: "HackTheChain is held in Kota on Feb 2024." },

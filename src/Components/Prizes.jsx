@@ -52,11 +52,11 @@ const TrophyCard = ({ image, title, color, borderColor, details }) => {
   return (
     <div 
       ref={cardRef}
-      className={`h-full ayush w-full rounded-xl shadow-lg ring-1 ring-black/5 bg-white/20 backdrop-blur-xl border-0 ${borderColor} group relative p-6 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl`}
-      style={{ width: '300px', height: '400px' }}
+      className={`h-full w-full rounded-xl shadow-lg ring-1 ring-black/5 bg-white/20 backdrop-blur-xl border-0 ${borderColor} group relative p-6 transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl`}
+      style={{ width: '100%', height: 'auto' }}
     >
       <div
-        className="flex ayush items-center justify-center p-4"
+        className="flex items-center justify-center p-4"
         style={{ width: '100%', height: '70%' }}
       >
         <img
@@ -101,9 +101,6 @@ const Second = () => {
   return (
     <div
       className="min-h-screen flex flex-col items-center justify-center p-8"
-      // style={{
-      //   background: 'linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 1) 100%), linear-gradient(to right, #3b82f6, #9333ea, #ec4899)',
-      // }}
     >
       <h1 className="text-5xl font-bold text-white mb-12 drop-shadow-lg">Prizes</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

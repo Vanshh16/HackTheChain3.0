@@ -1,8 +1,7 @@
-/* faqs.css */
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* General styles */
 .faqs-container {
-  /* background-color: #000; */
   color: #fff;
   padding: 40px;
   text-align: center;
@@ -20,6 +19,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
 
 .faq-item {
@@ -27,13 +27,13 @@
   max-width: 1000px;
   background-color: #1c1c1c;
   border-radius: 10px;
-  margin-bottom: 10px;
   padding: 15px 20px;
   color: #00d2ff;
   cursor: pointer;
   transition: background-color 0.3s, max-height 0.3s ease;
   overflow: hidden;
   font-family: "Orbitron";
+  box-sizing: border-box;
 }
 
 .faq-item.active {
@@ -56,4 +56,71 @@
   margin-top: 10px;
   font-size: 1rem;
   color: #b0e3ff;
+}
+
+/* Responsive styles */
+
+/* Small screens (mobile phones) */
+@media (max-width: 480px) {
+  .faqs-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .faq-item {
+    padding: 10px 15px;
+  }
+
+  .faq-item .faq-question {
+    font-size: 1rem;
+  }
+
+  .faq-answer {
+    font-size: 0.9rem;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .faqs-title {
+    font-size: 2.5rem;
+  }
+
+  .faq-item {
+    padding: 15px 18px;
+  }
+
+  .faq-item .faq-question {
+    font-size: 1.1rem;
+  }
+
+  .faq-answer {
+    font-size: 1rem;
+  }
+}
+
+/* Large screens (desktop) */
+@media (min-width: 1024px) {
+  .faqs-title {
+    font-size: 3rem;
+  }
+
+  .faq-item {
+    width: 80%;
+  }
+
+  .faq-item .faq-question {
+    font-size: 1.2rem;
+  }
+
+  .faq-answer {
+    font-size: 1rem;
+  }
+}
+
+/* Extra large screens (large desktop) */
+@media (min-width: 1280px) {
+  .faq-item {
+    width: 70%;
+  }
 }
