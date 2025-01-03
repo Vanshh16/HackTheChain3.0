@@ -56,9 +56,10 @@ function ScreenOpen() {
             {isHomeVisible ? (
                 <div className="content">
                     {isSmallScreen ? <HamburgerMenu /> : <Navbar />}
-                    <section id="home">
+                    <section id="Home" className="max-h-[50vh] lg:max-h-[100vh]">
                     <Home />
                     </section>
+
                     
                     <section id="about">
                         <About />

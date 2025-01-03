@@ -24,75 +24,96 @@ const Navbar = () => {
           } sm:flex flex-wrap gap-4 sm:gap-3 md:gap-6 lg:gap-8 xl:gap-12 list-none sm:flex-row sm:ml-auto`}
         >
           <li>
-            <Link
+            {/* <Link
               to="home"
               className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
               smooth={true}
               duration={500}
             >
               Home
-            </Link>
+            </Link> */}
+            <a href="#Home" className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
+              smooth={true}
+              duration={500}>Home</a>
           </li>
           
           <li>
-            <Link
+            {/* <Link
               to="about"
               className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
               smooth={true}
               duration={500}
             >
               About
-            </Link>
+            </Link> */}
+            <a href="#about" className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
+              smooth={true}
+              duration={500}>About</a>
           </li>
-          <li>
-            <Link
+          {/* <li> */}
+            {/* <Link
               to="timeline"
               className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
               smooth={true}
               duration={500}
             >
               Timeline
-            </Link>
-          </li>
+            </Link> */}
+            {/* <a href="#timeline" className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
+              smooth={true}
+              duration={500}>Timeline</a> */}
+          {/* </li> */}
           <li>
-            <Link
+            {/* <Link
               to="stats"
               className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
               smooth={true}
               duration={500}
             >
               Stats
-            </Link>
+            </Link> */}
+            <a href="#prizes" className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
+              smooth={true}
+              duration={500}>Prizes</a>
           </li>
           <li>
-            <Link
+            {/* <Link
               to="sponsors"
               className="text-white text-lg sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
               smooth={true}
               duration={500}
             >
               Sponsors
-            </Link>
+            </Link> */}
+            <a href="#sponsors" className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
+              smooth={true}
+              duration={500}>Sponsors</a>
           </li>
           <li>
-            <Link
+            {/* <Link
               to="FAQs"
               className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
               smooth={true}
               duration={500}
             >
               FAQs
-            </Link>
+            </Link> */}
+            <a href="#FAQs" className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
+              smooth={true}
+              duration={500}>FAQs</a>
           </li>
           <li>
-            <Link
+            {/* <Link
               to="contact"
               className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
               smooth={true}
               duration={500}
             >
               Contact Us
-            </Link>
+            </Link> */}
+            <a href="#contact" className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
+              smooth={true}
+              duration={500}>Contact Us</a>
           </li>
           <li>
             <a

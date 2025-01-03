@@ -3,9 +3,10 @@
 .team-container {
   /* background-color: #000; */
   color: #ffffff;
-  padding: 50px 20px;
+  /* padding: 50px 20px; */
   text-align: center;
   width: 100%;
+  top: 0%;
 }
 
 .aboutus {

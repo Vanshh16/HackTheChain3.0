@@ -8,11 +8,16 @@
   scroll-behavior: smooth;
 }
 
-html, body {
+html, body { 
   background-color: black;
   overflow-x: hidden;
   height: 100%;
+  width: 100%;
 }
+
+
+
+
 
 /* Image Background */
 .image-background {
@@ -34,7 +39,6 @@ html, body {
 
 /* Content Styling */
 .content {
-  position: relative;
   z-index: 1; /* Ensures content is above the image */
   color: white;
   min-height: 100vh; /* Each section takes at least full screen */
@@ -44,7 +48,7 @@ html, body {
 /* Section Styling */
 section {
   padding: 4rem 2rem;
-  min-height: 100vh; /* Ensure sections are tall enough */
+
 }
 
 /* Navbar or Fixed Header */
