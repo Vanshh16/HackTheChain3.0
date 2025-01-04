@@ -706,26 +706,5 @@
 }
 
 
-@media screen and (max-height:377px) {
-  .dhruv {
-    height: 150px;
-    margin-left: 10px;
-    margin-right: auto;
-    display: block;
-  }
 
-  .grid-container {
-    height: 30vh;
-    margin-top: -100px;
-  }
 
-  .grid-container .text h1 {
-    font-size: 1.0rem;
-    margin-left :1rem; 
-    margin-top : 2rem;
-  }
-
-  #home{
-    height: 200px;
-  }
-}

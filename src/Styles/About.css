@@ -7,6 +7,7 @@
   text-align: center;
   width: 100%;
   top: 0%;
+  margin-top: 400px;
 }
 
 .aboutus {
@@ -89,8 +90,7 @@
   background-color: #9b59b6;
 }
 
-/* Responsive Design */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .team-member {
     width: 200px;
   }
@@ -103,4 +103,25 @@
   .team-title {
     font-size: 3rem;
   }
-}
+} */
+
+
+/* @media (max-height: 965px) {
+  .team-member {
+    width: 200px;
+  }
+
+  .team-member-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .team-title {
+    font-size: 3rem;
+  }
+
+  .team-container{
+    margin-top : 400px;
+  }
+} */
+
