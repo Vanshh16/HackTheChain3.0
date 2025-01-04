@@ -378,6 +378,24 @@
   }
 }
 
+@media screen and (max-width: 598px) {
+  .dhruv {
+    height: 200px;
+    margin-left: 180px;
+    margin-right: auto;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 2rem;
+    margin-left : -2rem
+  }
+}
+
 @media screen and (max-width: 580px) {
   .dhruv {
     height: 300px;
@@ -396,6 +414,33 @@
     margin-left :-10rem
   }
 }
+
+
+@media screen and (max-width: 574px) {
+  .dhruv {
+    height: 300px;
+    margin-left: 140px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 1.8rem;
+    margin-left :-2rem
+  }
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 545px) {
   .dhruv {
@@ -456,6 +501,25 @@
   }
 }
 
+@media screen and (max-width: 507px) {
+  .dhruv {
+    height: 300px;
+    margin-left: 110px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 1.4rem;
+    margin-left :0rem
+  }
+}
+
 @media screen and (max-width: 505px) {
   .dhruv {
     height: 300px;
@@ -490,6 +554,46 @@
   .grid-container .text h1 {
     font-size: 1.4rem;
     margin-left : -20rem
+  }
+}
+
+@media screen and (max-width: 492px) {
+  .dhruv {
+    height: 150px;
+    margin-left: 4px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 1.0rem;
+    margin-left :0rem; 
+    margin-top : 2rem;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .dhruv {
+    height: 150px;
+    margin-left: 4px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .grid-container {
+    height: 30vh;
+    margin-top: -100px;
+  }
+
+  .grid-container .text h1 {
+    font-size: 1.0rem;
+    margin-left :0rem; 
+    margin-top : 2rem;
   }
 }
 

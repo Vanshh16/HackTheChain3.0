@@ -1,5 +1,5 @@
 import React from 'react';
-import Clock from './Clock'; 
+import Clock from './Clock';
 import '../Styles/Home.css'
 
 const Home = () => {
@@ -12,13 +12,18 @@ const Home = () => {
         <Clock />
       </div> */}
 
-      <img className="dhruv" src="../hackTheChain.png" alt="not available .." />
+      <img
+        className="dhruv w-full max-w-md mx-auto sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3 object-contain"
+        src="../hackTheChain.png"
+        alt="not available .."
+      />
 
       <div className="grid-container">
-      <div className="text">
-            <h1>HACK THE CHAIN</h1>
+        <div className="text">
+          <h1>HACK THE CHAIN</h1>
         </div>
       </div>
+      
     </section>
   );
 };
