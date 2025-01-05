@@ -52,7 +52,7 @@ const HamburgerMenu = () => {
             <a href="#Home" onClick={() => scrollToSection("Home")}>Home</a>
           </li>
           <li className="px-4 py-2 hover:bg-gray-700">
-            <a href="#prizes" onClick={() => scrollToSection("about")}>About</a>
+            <a href="#about" onClick={() => scrollToSection("about")}>About</a>
           </li>
           {/* <li className="px-4 py-2 hover:bg-gray-700">
             <a href="#timeline" onClick={() => scrollToSection("timeline")}>Timeline</a>
