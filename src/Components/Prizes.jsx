@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import first from "../assets/pictures/first.png";
-import second from "../assets/pictures/second.png";
-import third from "../assets/pictures/third.png";
+import first from "/pictures/first.png";
+import second from "/pictures/second.png";
+import third from "/pictures/third.png";
 import "../Styles/Prizes.css";
 
 const trophies = [

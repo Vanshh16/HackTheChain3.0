@@ -8,6 +8,7 @@ import Prizes from './Components/Prizes.jsx';
 import Timeline from './Components/Timeline.jsx';
 import Stats from "./Components/Stats.jsx";
 import Ending from "./Components/Ending.jsx";
+import OurTeam from './Components/OurTeam.jsx';
 
 import './App.css';
 import AnimatedTransition from './Components/AnimatedTransition';
@@ -22,7 +23,7 @@ function App() {
 }
 function ScreenOpen() {
     const [isHomeVisible, setIsHomeVisible] = useState(false);
-    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 768);
+    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 935);
 
     useEffect(() => {
         const hasAnimationPlayed = sessionStorage.getItem('animationsPlayed');
@@ -35,7 +36,7 @@ function ScreenOpen() {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsSmallScreen(window.innerWidth < 768);
+            setIsSmallScreen(window.innerWidth < 935);
         };
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
@@ -56,7 +57,7 @@ function ScreenOpen() {
             {isHomeVisible ? (
                 <div className="content">
                     {isSmallScreen ? <HamburgerMenu /> : <Navbar />}
-                    <section id="Home" className="max-h-[50vh] lg:max-h-[100vh]">
+                    <section id="Home" className="max-h-[30vh] lg:max-h-[100vh]">
                     <Home />
                     </section>
 
@@ -75,6 +76,9 @@ function ScreenOpen() {
                     </section>
                     <section id="sponsors">
                         <Sponsors />
+                    </section>
+                    <section>
+                        <OurTeam />
                     </section>
                     <section id="FAQs">
                         <FAQs />

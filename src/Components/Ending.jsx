@@ -1,4 +1,4 @@
-import iiitk from "../assets/pictures/iiitk.png";
+import iiitk from "/pictures/iiitk.png";
 import PendulumAnimation from "./PendulumAnimation";
 import "../Styles/Ending.css";
 
