@@ -58,27 +58,6 @@
   color: #b0e3ff;
 }
 
-/* Responsive styles */
-
-/* Small screens (mobile phones) */
-@media (max-width: 480px) {
-  .faqs-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-
-  .faq-item {
-    padding: 10px 15px;
-  }
-
-  .faq-item .faq-question {
-    font-size: 1rem;
-  }
-
-  .faq-answer {
-    font-size: 0.9rem;
-  }
-}
 
 /* Medium screens (tablets) */
 @media (max-width: 768px) {
@@ -124,3 +103,116 @@
     width: 70%;
   }
 }
+
+
+/* Responsive styles */
+
+/* For screens 480px and below */
+@media (max-width: 480px) {
+  .faqs-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .faq-item {
+    padding: 10px 12px;
+    width: 95%;
+  }
+
+  .faq-item .faq-question {
+    font-size: 0.9rem;
+    word-wrap: break-word;
+  }
+
+  .faq-answer {
+    font-size: 0.8rem;
+  }
+}
+
+/* For screens 450px and below */
+@media (max-width: 450px) {
+  .faqs-title {
+    font-size: 1.4rem;
+  }
+
+  .faq-item {
+    padding: 10px 10px;
+    width: 90%;
+  }
+
+  .faq-item .faq-question {
+    font-size: 0.6rem;
+    word-wrap: break-word;
+  }
+
+  .faq-answer {
+    font-size: 0.7rem;
+  }
+}
+
+/* For screens 390px and below */
+@media (max-width: 390px) {
+  .faqs-title {
+    font-size: 1.3rem;
+  }
+
+  .faq-item {
+    padding: 8px 10px;
+    width: 85%;
+  }
+
+  .faq-item .faq-question {
+    font-size: 0.5rem;
+    word-wrap: break-word;
+  }
+
+  .faq-answer {
+    font-size: 0.6rem;
+  }
+}
+
+/* For screens 360px and below */
+@media (max-width: 360px) {
+  .faqs-title {
+    font-size: 1.2rem;
+  }
+
+  .faq-item {
+    padding: 8px 8px;
+    width: 80%;
+  }
+
+  .faq-item .faq-question {
+    font-size: 0.6rem;
+    word-wrap: break-word;
+  }
+
+  .faq-answer {
+    font-size: 0.5rem;
+  }
+}
+
+/* For screens below 360px */
+@media (max-width: 320px) {
+  .faqs-title {
+    font-size: 1rem;
+  }
+
+  .faq-item {
+    padding: 5px 6px;
+    width: 75%;
+  }
+
+  .faq-item .faq-question {
+    font-size: 0.5rem;
+    word-wrap: break-word;
+  }
+
+  .faq-answer {
+    font-size: 0.4rem;
+  }
+}
+
+
+
+
