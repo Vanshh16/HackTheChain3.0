@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from './Components/Navbar';
 import FAQs from './Components/FAQs';
 import Home from './Components/Home';
@@ -16,11 +16,12 @@ import HamburgerMenu from './Components/HamBurgerMenu.jsx';
 
 function App() {
     return (
-        <div className='h-screen'>
+        <div>
             <ScreenOpen />
         </div>
     );
 }
+
 function ScreenOpen() {
     const [isHomeVisible, setIsHomeVisible] = useState(false);
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 935);
@@ -49,19 +50,14 @@ function ScreenOpen() {
 
     return (
         <div>
-            <div className="image-background">
-                <img src="/dhruvbackground.svg" alt="Background" className="image-element" />
-            </div>
-
-            {/* Content */}
+            <div className="image-background"></div> {/* Static background */}
+            
             {isHomeVisible ? (
                 <div className="content">
                     {isSmallScreen ? <HamburgerMenu /> : <Navbar />}
-                    <section id="Home" className="max-h-[30vh] lg:max-h-[100vh]">
-                    <Home />
+                    <section id="Home">
+                        <Home />
                     </section>
-
-                    
                     <section id="about">
                         <About />
                     </section>

@@ -1,131 +1,102 @@
-import React, { useState } from 'react';
-import { Link } from 'react-scroll';
-import "../Styles/Navbar.css"
+import React, { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
+import "../Styles/Navbar.css";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-black ayush bg-opacity-50 h-16 flex justify-between items-center sticky top-0 z-50 px-5 sm:px-10">
-      <div className="flex justify-between items-center w-full max-w-6xl">
-        {/* Hamburger icon for small screens */}
-        <div className="sm:hidden" onClick={toggleMenu}>
-          <button className="text-white text-2xl">☰</button>
+    <nav className="bg-slate-700 opacity-75 text-white shadow-lg sticky top-0 z-50">
+      <div className="container mx-auto px-4 flex items-center justify-between h-20">
+        {/* Left Section: Icons/Logo */}
+        <div className="flex items-center space-x-4">
+          {/* Hackathon Icons/Logos */}
+          <div className="flex space-x-2">
+            <div className="h-10 w-10 bg-red-500 rounded-lg"></div>
+            <div className="h-10 w-10 bg-blue-500 rounded-lg"></div>
+            <div className="h-10 w-10 bg-green-500 rounded-lg"></div>
+          </div>
+          <span className="text-xl font-bold">Hackathon</span>
         </div>
 
-        {/* Navbar items */}
-        <ul
-          className={`${
-            isMenuOpen ? 'block' : 'hidden'
-          } sm:flex flex-wrap gap-4 sm:gap-3 md:gap-6 lg:gap-8 xl:gap-12 list-none sm:flex-row sm:ml-auto`}
+        {/* Right Section: Navigation */}
+        <div className="hidden md:flex space-x-6 items-center text-xl">
+          <a
+            href="#home"
+            className="hover:text-yellow-400 transition duration-300"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            className="hover:text-yellow-400 transition duration-300"
+          >
+            About
+          </a>
+          <a
+            href="#schedule"
+            className="hover:text-yellow-400 transition duration-300"
+          >
+            Schedule
+          </a>
+          <a
+            href="#sponsors"
+            className="hover:text-yellow-400 transition duration-300"
+          >
+            Sponsors
+          </a>
+          <a
+            href="#contact"
+            className="hover:text-yellow-400 transition duration-300"
+          >
+            Contact
+          </a>
+        </div>
+
+        {/* Mobile Menu Toggle */}
+        <button
+          className="md:hidden text-2xl focus:outline-none"
+          onClick={() => setMenuOpen(!menuOpen)}
         >
-          <li>
-            {/* <Link
-              to="home"
-              className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
-              smooth={true}
-              duration={500}
-            >
-              Home
-            </Link> */}
-            <a href="#Home" className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
-              smooth={true}
-              duration={500}>Home</a>
-          </li>
-          
-          <li>
-            {/* <Link
-              to="about"
-              className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
-              smooth={true}
-              duration={500}
-            >
-              About
-            </Link> */}
-            <a href="#about" className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
-              smooth={true}
-              duration={500}>About</a>
-          </li>
-          {/* <li> */}
-            {/* <Link
-              to="timeline"
-              className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
-              smooth={true}
-              duration={500}
-            >
-              Timeline
-            </Link> */}
-            {/* <a href="#timeline" className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
-              smooth={true}
-              duration={500}>Timeline</a> */}
-          {/* </li> */}
-          <li>
-            {/* <Link
-              to="stats"
-              className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
-              smooth={true}
-              duration={500}
-            >
-              Stats
-            </Link> */}
-            <a href="#prizes" className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
-              smooth={true}
-              duration={500}>Prizes</a>
-          </li>
-          <li>
-            {/* <Link
-              to="sponsors"
-              className="text-white text-lg sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
-              smooth={true}
-              duration={500}
-            >
-              Sponsors
-            </Link> */}
-            <a href="#sponsors" className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
-              smooth={true}
-              duration={500}>Sponsors</a>
-          </li>
-          <li>
-            {/* <Link
-              to="FAQs"
-              className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
-              smooth={true}
-              duration={500}
-            >
-              FAQs
-            </Link> */}
-            <a href="#FAQs" className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
-              smooth={true}
-              duration={500}>FAQs</a>
-          </li>
-          <li>
-            {/* <Link
-              to="contact"
-              className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
-              smooth={true}
-              duration={500}
-            >
-              Contact Us
-            </Link> */}
-            <a href="#contact" className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
-              smooth={true}
-              duration={500}>Contact Us</a>
-          </li>
-          <li>
-            <a
-              href="/assets/HackTheChain3.O.pdf"
-              className="text-white text-sm sm:text-base md:text-lg cursor-pointer transition-colors duration-300 hover:text-yellow-500"
-              download
-            >
-              Download Brochure
-            </a>
-          </li>
-        </ul>
+          {menuOpen ? <FiX /> : <FiMenu />}
+        </button>
       </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="md:hidden bg-gray-800 text-white nav-elements">
+          <a
+            href="#home"
+            className="block py-2 px-4 hover:bg-gray-700 transition duration-300"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            className="block py-2 px-4 hover:bg-gray-700 transition duration-300"
+          >
+            About
+          </a>
+          <a
+            href="#schedule"
+            className="block py-2 px-4 hover:bg-gray-700 transition duration-300"
+          >
+            Schedule
+          </a>
+          <a
+            href="#sponsors"
+            className="block py-2 px-4 hover:bg-gray-700 transition duration-300"
+          >
+            Sponsors
+          </a>
+          <a
+            href="#contact"
+            className="block py-2 px-4 hover:bg-gray-700 transition duration-300"
+          >
+            Contact
+          </a>
+        </div>
+      )}
     </nav>
   );
 };

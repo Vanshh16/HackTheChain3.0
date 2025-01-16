@@ -19,7 +19,7 @@ const HamburgerMenu = () => {
     <div className="relative p-5">
       {/* Hamburger Icon */}
       <button
-        className="flex flex-col justify-around w-8 h-8 bg-transparent border-none outline-none"
+        className="flex flex-col justify-around w-4 h-4 bg-transparent border-none outline-none"
         onClick={toggleMenu}
         aria-label="Toggle Menu"
         aria-expanded={isOpen ? "true" : "false"}
@@ -43,7 +43,7 @@ const HamburgerMenu = () => {
 
       {/* Dropdown Menu */}
       <div
-        className={`absolute left-0 mt-2 w-48 bg-[#150016] text-white rounded-lg shadow-lg transform transition-transform duration-300 ease-in-out ${
+        className={`absolute left-0 mt-2 w-48 bg-transparent text-white rounded-lg shadow-lg transform transition-transform duration-300 ease-in-out ${
           isOpen ? "scale-100 opacity-100" : "scale-75 opacity-0 pointer-events-none"
         }`}
       >

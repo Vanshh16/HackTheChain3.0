@@ -8,50 +8,43 @@
   scroll-behavior: smooth;
 }
 
-html, body { 
+html, body {
   background-color: black;
   overflow-x: hidden;
   height: 100%;
   width: 100%;
 }
 
-
-
-
-
-/* Image Background */
+/* Static Background */
 .image-background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -1; /* Place the background behind all content */
+  background-image: url('/background.jpg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Makes the background static */
   overflow: hidden;
-}
-
-.image-element {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;  /* Ensures the image covers the full background */
-  object-position: center; /* Centers the image */
 }
 
 /* Content Styling */
 .content {
-  z-index: 1; /* Ensures content is above the image */
+  position: relative;
+  z-index: 1; /* Ensures content is above the background */
   color: white;
   min-height: 100vh; /* Each section takes at least full screen */
-  padding: 2rem; /* Adjust for spacing */
+  /* padding: 4rem 2rem; */
 }
 
 /* Section Styling */
 section {
-  padding: 4rem 2rem;
-
+  padding: 6rem 0rem 0rem 0rem; 
 }
 
-/* Navbar or Fixed Header */
+/* Navbar Styling */
 .navbar {
   position: fixed;
   top: 0;
@@ -59,12 +52,19 @@ section {
   width: 100%;
   z-index: 10; /* Higher than .content */
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.7); /* Optional: Adds a semi-transparent background to navbar */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Optional: Adds a blur effect */
 }
 
-/* Style for other elements like HamburgerMenu, etc., can be added here as needed */
+/* Hamburger Menu Styling */
+.hamburger-menu {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10; /* Ensure it’s above the content */
+}
 
-/* Scrollbar styling */
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -76,4 +76,27 @@ section {
 
 ::-webkit-scrollbar-track {
   background-color: black;
+}
+
+/* Text Slicer (for AnimatedTransition) */
+.text-slicer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
+/* Background Element Adjustment */
+.background-element {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }

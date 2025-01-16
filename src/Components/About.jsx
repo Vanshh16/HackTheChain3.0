@@ -47,7 +47,7 @@ const Team = () => {
 
   return (
     <div className="team-container">
-      <h1 className="aboutus text-3xl font-semibold mb-8 text-blue-500">About Us</h1>
+      <h1 className="aboutus font-semibold mb-8">About Us</h1>
       <p className="aboutusp text-base md:text-xl mb-10 text-gray-300 font-sans px-4 md:px-24">
         <span>Welcome to HackTheChain 3.0, the biggest hackathon in Kota City, presented by the Indian Institute of Information Technology Kota (IIIT Kota) in association with Codebase IIIT Kota.
         This hybrid event will be hosted on Devfolio with a prize pool of ₹1,00,000.</span>
