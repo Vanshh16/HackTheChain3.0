@@ -32,8 +32,7 @@ const OurTeam = () => {
             <div
               key={member.id}
               className="shadow-lg rounded-lg p-4 flex flex-col items-center w-40"
-              style={{ background: 'linear-gradient(to right, #ff7e5f, #feb47b)' }}
-
+              style={{ background:' radial-gradient(circle, #9d174d, #93c5fd,#93c5fd)'}}
             >
               <div className="w-24 h-24 border-4 border-blue-500 rounded-full overflow-hidden">
                 <img
@@ -52,8 +51,8 @@ const OurTeam = () => {
           {secondRow.map((member) => (
             <div
               key={member.id}
-              className="bg-white shadow-lg rounded-lg p-4 flex flex-col items-center w-40"
-            >
+              className="shadow-lg rounded-lg p-4 flex flex-col items-center w-40"
+              style={{ background:' radial-gradient(circle, #9d174d, #93c5fd,#93c5fd)'}}            >
               <div className="w-24 h-24 border-4 border-blue-500 rounded-full overflow-hidden">
                 <img
                   src={member.imageUrl}

@@ -25,19 +25,20 @@
 .faq-item {
   width: 100%;
   max-width: 1000px;
-  background-color: #1c1c1c;
+  background-color:#2d687d30;
   border-radius: 10px;
   padding: 15px 20px;
-  color: #00d2ff;
+  color: #00d0ff50;
   cursor: pointer;
   transition: background-color 0.3s, max-height 0.3s ease;
   overflow: hidden;
   font-family: "Orbitron";
   box-sizing: border-box;
+  color:#03a7b6
 }
 
 .faq-item.active {
-  background-color: #2a2a2a;
+  background-color: #2a2a2a40;
   max-height: 200px;
 }
 

@@ -72,7 +72,10 @@ function StatCard({ title, value, description }) {
         </span>
       </h2>
       <p className="text-xl font-medium ayush  mb-1">{title}</p>
-      <p className="text-gray-900 font-semibold ayush">{description}</p>
+      <p className="text-white font-semibold ayush" style={{ textShadow: '0 0 0.2px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.5)' }}>
+  {description}
+</p>
+
     </div>
   );
 }

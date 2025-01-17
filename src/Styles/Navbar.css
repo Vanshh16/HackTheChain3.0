@@ -14,13 +14,13 @@
 }
 
 /* Red Icon on Left */
-.icon {
+/* .icon {
   height: 80px;
   width: 80px;
   background-color: red;
   border-radius: 8px;
-  flex-shrink: 0; /* Prevent icon from resizing */
-}
+  flex-shrink: 0;
+} */
 
 /* Navbar Styling */
 .navbar {
