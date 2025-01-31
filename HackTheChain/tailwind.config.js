@@ -28,9 +28,13 @@ export default {
         md: '2px 2px 4px rgba(0, 0, 0, 0.5)',
         lg: '3px 3px 6px rgba(0, 0, 0, 0.6)',
       },
+
+      clipPath: {
+        'green-triangle': 'polygon(0 75%, 100% 0, 100% 100%, 0 100%)',
+      },
       
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 };

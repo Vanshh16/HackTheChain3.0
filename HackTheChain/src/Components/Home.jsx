@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 const Home = () => {
   const [text, setText] = useState(""); // State for the typing effect
   const [showContent, setShowContent] = useState(false); // State to show the secondary content
+  const [typingComplete, setTypingComplete] = useState(false); // State to remove cursor
+  const [triangleVisible, setTriangleVisible] = useState(false); // State to control triangle visibility
   const fullText = "HaackTheChain 3.0"; // Full text to display
 
   useEffect(() => {
@@ -14,7 +16,9 @@ const Home = () => {
         index++;
       } else {
         clearInterval(interval); // Stop the interval when the full text is displayed
+        setTypingComplete(true); // Mark typing as complete
         setTimeout(() => setShowContent(true), 500); // Show the secondary content after typing effect
+        setTimeout(() => setTriangleVisible(true), 1000); // Show the triangle after the content
       }
     }, 150); // Typing speed in milliseconds
 
@@ -22,45 +26,67 @@ const Home = () => {
   }, []); // Empty dependency array to run only on component mount
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between mb-4 bg-transparent text-white p-8 min-h-screen">
+    <div className="flex flex-col md:flex-row items-center justify-between mb-2 bg-transparent text-white px-4 sm:px-8 min-h-screen relative">
       {/* Text Section */}
-      <div className="md:w-1/2 space-y-6">
-        <h1 className="text-4xl md:text-5xl font-bold text-white">
-          {text}
-          <span className="text-pink-500">|</span> {/* Optional blinking cursor */}
-        </h1>
-        <h2
-          className={`text-2xl text-white ${
-            showContent ? "animate-fade-up" : "opacity-0"
-          }`}
+      <div className="md:w-1/2 w-full space-y-6 text-center md:text-left z-10">
+        <h1
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-10xl googlefont text-white"
           style={{
-            textShadow:
-              "0 0 5px #A855F7, 0 0 10px #A855F7, 0 0 20px #A855F7, 0 0 40px #A855F7",
+            textShadow: "-1px 7px 0px rgba(69, 248, 130, 0.66)",
           }}
         >
-          The Biggest Hackathon in Kota City
-        </h2>
-        <p
-          className={`text-lg leading-relaxed ${
-            showContent ? "animate-fade-up" : "opacity-0"
-          }`}
+          {text}
+          {!typingComplete && <span className="text-pink-500">|</span>} {/* Cursor disappears when typingComplete is true */}
+        </h1>
 
-          style = {{fontFamily : "monospace"}}
+        {/* Card Section */}
+        <div
+          className={`${
+            showContent ? "animate-fade-up" : "opacity-0"
+          } bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md mx-auto mt-6 ml-0`} 
+          style={{ background: "linear-gradient(135deg,rgba(23, 31, 37, 0.46), rgb(81, 209, 119))" }}
         >
-          As part of our Tech-Summit organized by TechKnow Society, join the
-          ultimate hackathon for developers of all skill levels! Hack your way
-          to success at HackTheChain 3.0!
-        </p>
+          <h2
+            className="text-xl sm:text-2xl md:text-3xl text-white"
+            style={{
+              textShadow:
+                "0 0 5px  rgba(69, 248, 130, 0.66), 0 0 10px  rgba(69, 248, 130, 0.66), 0 0 20px  rgba(69, 248, 130, 0.66), 0 0 40px rgba(69, 248, 130, 0.66)",
+            }}
+          >
+            The Biggest Hackathon in Kota City
+          </h2>
+          <p
+            className="text-sm sm:text-lg leading-relaxed mt-4"
+            style={{ fontFamily: "cursive" }}
+          >
+            As part of our Tech-Summit organized by TechKnow Society, join the
+            ultimate hackathon for developers of all skill levels! Hack your way
+            to success at HackTheChain 3.0!
+          </p>
+        </div>
       </div>
 
       {/* Image Section */}
-      <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+      <div className="md:w-1/2 w-full flex justify-center mt-6 md:mt-0">
         <img
           src="/pictures/logo2.png"
           alt="HackTheChain Illustration"
-          className="max-w-full h-auto hover:wobble"
+          className="max-w-[80%] sm:max-w-[90%] md:max-w-[100%] lg:max-w-[95%] h-auto hover:wobble"
         />
       </div>
+
+      {/* Green Triangular Section */}
+      <div
+        className={`absolute bottom-0 w-full ${triangleVisible ? "opacity-100" : "opacity-0"}`}
+        style={{
+          clipPath: "polygon(100% 100%, 0% 0%,0% 100%, 100% 0%, 100% 100%)", // Mirrored triangle
+          backgroundColor: "#45F882", // Green background
+          height: "40px", // Adjust height for size
+          transition: "opacity 1s ease-out", // Transition for opacity
+          zIndex: "-1", // Make sure the triangle is behind the text
+          
+        }}
+      ></div>
 
       {/* CSS for animations */}
       <style jsx>{`
@@ -88,7 +114,7 @@ const Home = () => {
             transform: rotate(2deg);
           }
         }
-        .hover\\:wobble:hover {
+        .hover\:wobble:hover {
           animation: wobble 1s ease-in-out;
         }
         .text-pink-500 {

@@ -72,6 +72,10 @@ const AnimatedTransition = ({ onAnimationComplete }) => {
                 <div className="text ayush">Hack The Chain 3.0</div>
                 <div className="text ayush">Hack The Chain 3.0</div>
                 <div className="text ayush">Hack The Chain 3.0</div>
+                <div className="text ayush">Hack The Chain 3.0</div>
+                <div className="text ayush">Hack The Chain 3.0</div>
+  
+  
             </div>
             {showNewPage && <Home />}
         </div>
