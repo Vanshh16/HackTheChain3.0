@@ -68,7 +68,7 @@ const Domains = () => {
   ];
 
   return (
-    <div className="domains-container">
+    <div className="domains-container" id="domains">
       <h1 className="title">DOMAINS</h1>
       <div className="domains-grid">
         {domains.map((domain, index) => (

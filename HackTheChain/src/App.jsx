@@ -81,13 +81,13 @@ function ScreenOpen() {
                                 <Home />
                             </div>
                         </section>
-                        <section id="about">
+                        <section id="about-us">
                             <About />
                         </section>
                         <section id="timeline">
                             <Timeline />
                         </section>
-                        <section id="stats1">
+                        <section id="stats">
                             <Stats />
                         </section>
                         <section id="prizes">
@@ -99,7 +99,7 @@ function ScreenOpen() {
                         <section>
                             <OurTeam />
                         </section>
-                        <section id="FAQs">
+                        <section id="faqs">
                             <FAQs />
                         </section>
                         <section id="contact">
