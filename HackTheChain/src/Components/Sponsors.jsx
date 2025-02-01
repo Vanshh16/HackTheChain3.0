@@ -21,13 +21,13 @@ const Sponsors = () => {
           <div className="grid lg:grid-cols-3 sm:grid-cols-1 mt-8 px-4">
             <div className="max-w-6xl px-6 container text-center space-y-8">
               <h2 className="mt-6" style={{ fontSize: '40px', color: 'silver', fontWeight: 'bold' }}>Platinum</h2>
-              <div className="w-full border rounded-sm min-h-[100px] flex items-center justify-center p-10 hover:bg-[linear-gradient(rgba(53,225,255,0.4)_-50%,_rgba(58,58,58,0.15)_50%)]">
+              <div className="w-full border rounded-sm min-h-[100px] flex items-center justify-center p-5 hover:bg-[linear-gradient(rgba(53,225,255,0.4)_-50%,_rgba(58,58,58,0.15)_50%)]">
                 <ul className="grid sm:grid-rows-2 gap-10 md:gap-10 items-center relative">
                   <li className="flex items-center justify-center md:px-10">
-                    <img className="ps-img" src="./partners/DEVFOLIO.webp" alt="Devfolio Logo" />
+                    <img className="h-20" src="./partners/DEVFOLIO.webp" alt="Devfolio Logo" />
                   </li>
                   <li className="flex items-center justify-center md:px-10">
-                    <img className="ps-img" src="./partners/POLYGON.webp" alt="Polygon Logo" />
+                    <img className="h-20" src="./partners/POLYGON.webp" alt="Polygon Logo" />
                   </li>
                 </ul>
               </div>
@@ -39,10 +39,10 @@ const Sponsors = () => {
               <div className="w-full border rounded-sm min-h-[100px] flex items-center justify-center p-10 hover:bg-[linear-gradient(rgba(176,103,255,0.6)_-50%,rgba(58,58,58,0.15)_50%)]">
                 <ul className="grid sm:grid-rows-1 gap-10 md:gap-10 items-center relative">
                   <li className="flex items-center justify-center md:px-10">
-                    <img className="ps-img" src="./partners/replit.png" alt="Replit Logo" />
+                    <img src="./partners/replit.png" alt="Replit Logo" />
                   </li>
                   <li className="flex items-center justify-center md:px-10">
-                    <img className="ps-img" src="./partners/solona.png" alt="Solana Logo" />
+                    <img src="./partners/solona.png" alt="Solana Logo" />
                   </li>
                 </ul>
               </div>
@@ -55,11 +55,11 @@ const Sponsors = () => {
                 <ul className="grid grid-rows-1 gap-10 md:gap-10 items-center relative">
                   <li className="flex items-center justify-center md:px-10">
                     <a href="https://beeceptor.com" target="_blank" rel="noopener noreferrer">
-                      <img className="ps-img" src="./partners/beeceptor-logo-horizontal.png" alt="Beeceptor Logo" />
+                      <img src="./partners/beeceptor-logo-horizontal.png" alt="Beeceptor Logo" />
                     </a>
                   </li>
                   <li className="flex items-center justify-center md:px-10">
-                    <img className="ps-img" src="./partners/Leading Learners White Logo Full Text PNG.png" alt="Leading Learners Logo" />
+                    <img src="./partners/Leading Learners White Logo Full Text PNG.png" alt="Leading Learners Logo" />
                   </li>
                 </ul>
               </div>
@@ -70,8 +70,8 @@ const Sponsors = () => {
           <div className="flex flex-wrap gap-6 mt-10 w-full max-w-screen-md mx-auto">
             {/* Other Sponsors */}
             <section id="other-sponsors" className="relative section">
-              <div className="bg-purple opacity-20 top-[10%] left-[50px] absolute w-[300px] rounded-full blur-3xl aspect-square"></div>
-              <div className="bg-purple opacity-20 bottom-[10%] -right-[80px] absolute w-[300px] rounded-full blur-3xl aspect-square"></div>
+              {/* <div className="bg-purple opacity-20 top-[10%] left-[50px] absolute w-[300px] rounded-full blur-3xl aspect-square"></div> */}
+              {/* <div className="bg-purple opacity-20 bottom-[10%] -right-[80px] absolute w-[300px] rounded-full blur-3xl aspect-square"></div> */}
               <div className="max-w-6xl container text-center space-y-8">
                 <div className="max-w-lg container space-y-4">
                   <h2 className="mt-6 ml-40" style={{ fontSize: '40px', fontWeight: 'bold' }}>Other Sponsors</h2>
@@ -80,23 +80,23 @@ const Sponsors = () => {
                   <ul className="grid sm:grid-cols-3 gap-10 md:gap-10 items-center relative">
                     <li className="flex items-center justify-center md:px-10">
                       <a href="https://www.taskade.com" target="_blank" rel="noopener noreferrer">
-                        <img className="ps-img" src="./partners/taskade.png" alt="Taskade Logo" />
+                        <img src="./partners/taskade.png" alt="Taskade Logo" />
                       </a>
                     </li>
                     <li className="flex items-center justify-center md:px-10">
-                      <img className="ps-img" src="./partners/InterviewBuddy.png" alt="InterviewBuddy Logo" />
+                      <img src="./partners/InterviewBuddy.png" alt="InterviewBuddy Logo" />
                     </li>
                     <li className="flex items-center justify-center md:px-10">
-                      <img className="ps-img" src="./partners/ECHO3D.png" alt="ECHO3D Logo" />
+                      <img src="./partners/ECHO3D.png" alt="ECHO3D Logo" />
                     </li>
                     <li className="flex items-center justify-center md:px-10">
-                      <img className="ps-img" src="./partners/axure.png" alt="Axure Logo" />
+                      <img src="./partners/axure.png" alt="Axure Logo" />
                     </li>
                     <li className="flex items-center justify-center md:px-10">
-                      <img className="ps-img" src="./partners/wolfram-language-logo.png" alt="Wolfram Logo" />
+                      <img src="./partners/wolfram-language-logo.png" alt="Wolfram Logo" />
                     </li>
                     <li className="flex items-center justify-center md:px-10">
-                      <img className="ps-img" src="./partners/verbwire.svg" alt="Verbwire Logo" />
+                      <img src="./partners/verbwire.svg" alt="Verbwire Logo" />
                     </li>
                   </ul>
                 </div>
@@ -105,8 +105,8 @@ const Sponsors = () => {
 
             {/* Campus Sponsors */}
             <section className="relative overflow-hidden">
-              <div className="bg-purple opacity-20 top-[10%] left-[50px] absolute w-[300px] rounded-full blur-3xl aspect-square"></div>
-              <div className="bg-purple opacity-20 bottom-[10%] -right-[80px] absolute w-[300px] rounded-full blur-3xl aspect-square"></div>
+              {/* <div className="bg-purple opacity-20 top-[10%] left-[50px] absolute w-[300px] rounded-full blur-3xl aspect-square"></div> */}
+              {/* <div className="bg-purple opacity-20 bottom-[10%] -right-[80px] absolute w-[300px] rounded-full blur-3xl aspect-square"></div> */}
               <div className="max-w-6xl container text-center space-y-8">
                 <div className="max-w-lg container space-y-4">
                   <h2 className="text-4xl font-bold ml-40">
