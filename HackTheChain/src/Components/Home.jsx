@@ -92,7 +92,7 @@ const Home = () => {
       {/* Image Section */}
       <div className="md:w-1/2 w-full flex justify-center mt-6 md:mt-0">
         <img
-          src="/pictures/logo2.png"
+          src="/pictures/heroimage.png"
           alt="HackTheChain Illustration"
           className="max-w-[80%] sm:max-w-[90%] md:max-w-[100%] lg:max-w-[95%] h-auto hover:wobble"
         />
