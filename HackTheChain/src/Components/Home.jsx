@@ -59,7 +59,7 @@ const Home = () => {
       <div className="md:w-1/2 w-full space-y-6 text-center md:text-left z-10">
         <h1
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-10xl googlefont text-white"
-          style={{ textShadow: "-1px 7px 0px rgba(69, 248, 130, 0.66)" }}
+          style={{ textShadow: "-1px 4px 0px rgba(69, 248, 130, 0.66)" }}
         >
           {text}
           {!typingComplete && <span className="text-pink-500">|</span>}

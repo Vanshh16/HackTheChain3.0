@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, Edit3 } from "lucide-react";
-import logo from "../logo.svg";
+import logo from "../../public/pictures/HTC_logo.png";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +30,7 @@ export default function Navbar() {
 
   return (
     <motion.nav
-      className={`bg-gray-900 text-white px-6 py-2 flex items-center justify-between fixed top-0 left-0 w-full z-50 shadow-lg transition-transform duration-300 ${
+      className={`bg-[#0E201C] text-white px-16 py-2 flex items-center justify-between fixed top-0 left-0 w-full z-50 shadow-lg transition-transform duration-300 ${
         isNavbarVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
@@ -39,11 +39,11 @@ export default function Navbar() {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
       onHoverStart={() => console.log('hover started!')}>
-        <img src={logo} alt="Logo" className="h-28 w-28"/>
+        <img src={logo} alt="Logo" className="h-16"/>
       </motion.div>
 
       {/* Desktop Links */}
-      <div className="hidden md:flex space-x-14 font-roboto text-lg font-bold">
+      <div className="hidden md:flex space-x-14 font-roboto text-base font-bold">
         {navLinks.map((link, index) => (
           <motion.a
             key={index}

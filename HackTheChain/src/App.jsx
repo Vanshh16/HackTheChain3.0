@@ -55,7 +55,7 @@ function ScreenOpen() {
             ) : (
                 <div className="content">
                     <VideoBackground />
-                    <div className="absolute opacity-20 bg-black z-1 min-h-full flex items-center justify-center w-screen"></div>
+                    <div className="absolute opacity-40 bg-black z-1 min-h-full flex items-center justify-center w-screen"></div>
                     {isSmallScreen ? <HamburgerMenu /> : <Navbar />}
                     <div className="overlay-content">
                         <section id="home" className="home-section">
