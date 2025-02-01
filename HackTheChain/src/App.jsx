@@ -14,10 +14,16 @@ import './App.css';
 import AnimatedTransition from './Components/AnimatedTransition';
 import HamburgerMenu from './Components/HamBurgerMenu.jsx';
 
+import ParticlesComponent from './Components/ParticleComponent.jsx';
+
+
+
+
 function App() {
     return (
         <div>
             <ScreenOpen />
+            
         </div>
     );
 }
@@ -48,18 +54,30 @@ function ScreenOpen() {
 
     return (
         <div>
+            
             {!isAnimationComplete ? (
                 <div className="text-slicer">
                     <AnimatedTransition onAnimationComplete={handleAnimationComplete} />
                 </div>
             ) : (
                 <div className="content">
-                    <VideoBackground />
-                    <div className="absolute opacity-40 bg-black z-1 min-h-full flex items-center justify-center w-screen"></div>
+ 
+
+
+                    <VideoBackground  />
+
+                    <ParticlesComponent id = "particles"/>
+
+                    
+                    <div className="absolute opacity-40 bg-black z-1 min-h-full flex items-center justify-center w-screen">
+
+                    </div>
                     {isSmallScreen ? <HamburgerMenu /> : <Navbar />}
                     <div className="overlay-content">
+
                         <section id="home" className="home-section">
                             <div className="home-content">
+                            <ParticlesComponent id = "particles"/>
                                 <Home />
                             </div>
                         </section>

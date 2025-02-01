@@ -142,3 +142,25 @@ html, body {
   text-align: center;
 }
 
+#particles {
+  top: 0;
+  left: 0;
+  position: absolute !important;
+  width: 100vw !important;
+  height: 1300vh!important;
+  z-index: -1 !important;
+  pointer-events: none;        /* Prevent particles from blocking interactions */
+
+
+
+ }
+
+#tsparticles {
+  position: fixed;             /* Ensures it covers the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;                /* Keeps particles behind all content */
+  pointer-events: none;      /* Prevents interactions with particles */
+}
