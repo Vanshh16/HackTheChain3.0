@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import BlurredSmokyCircle from "./Shadow";
 
 const Home = () => {
   const [text, setText] = useState(""); // Typing effect state
@@ -54,25 +55,43 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between mb-2 bg-transparent text-white px-4 sm:px-8 min-h-screen relative">
+    <div className="flex flex-col md:flex-row items-center justify-center mb-2 bg-transparent text-white px-4 sm:px-8 min-h-screen relative">
       {/* Text Section */}
-      <div className="md:w-1/2 w-full space-y-6 text-center md:text-left z-10">
-        <h1
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-10xl googlefont text-white"
-          style={{ textShadow: "-1px 4px 0px rgba(69, 248, 130, 0.66)" }}
+      <div className="absolute top-40 left-12">
+      <BlurredSmokyCircle />
+      </div>
+      
+      <div className="w-full px-32 space-y-16 text-center z-10">
+      <h1
+          className="text-3xl sm:text-xl md:text-2xl lg:text-4xl font-bold text-white"
+          style={{
+              textShadow:
+                "0 0 5px  rgba(69, 248, 130, 0.66), 0 0 10px  rgba(69, 248, 130, 0.66), 0 0 20px  rgba(69, 248, 130, 0.66), 0 0 40px rgba(69, 248, 130, 0.66)",
+            }}
         >
-          {text}
+          CodeBase presents
+        </h1>
+        <h1
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold font-sans text-transparent bg-clip-text"
+          style={{
+    backgroundImage: "linear-gradient(to right, #15803D, #73baa3, #fff)",
+  }}
+          // style={{ textShadow: "-1px 4px 0px rgba(69, 248, 130, 0.66)" }}
+        >
+          {/* {text} */}
+          HackTheChain 3.0
           {!typingComplete && <span className="text-pink-500">|</span>}
         </h1>
 
         {/* Card Section */}
         <div
-          className={`${
-            showContent ? "animate-fade-up" : "opacity-0"
-          } bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md mx-auto mt-6 ml-0`}
-          style={{
-            background: "linear-gradient(135deg,rgba(23, 31, 37, 0.46), rgb(81, 209, 119))",
-          }}
+        className="w-1/2 mx-auto"
+          // className={`${
+          //   showContent ? "animate-fade-up" : "opacity-0"
+          // } bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md mx-auto mt-6 ml-0`}
+          // style={{
+          //   background: "linear-gradient(135deg,rgba(23, 31, 37, 0.46), rgb(81, 209, 119))",
+          // }}
         >
           <h2
             className="text-xl sm:text-2xl md:text-3xl text-white"
@@ -87,16 +106,20 @@ const Home = () => {
             As part of our Tech-Summit organized by TechKnow Society, join the ultimate hackathon for developers of all skill levels! Hack your way to success at HackTheChain 3.0!
           </p>
         </div>
+
+        <button className="px-10 py-3 border border-green-500 text-white font-semibold text-lg rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+      Register
+    </button>
       </div>
 
       {/* Image Section */}
-      <div className="md:w-1/2 w-full flex justify-center mt-6 md:mt-0">
+      {/* <div className="md:w-1/2 w-full flex justify-center mt-6 md:mt-0">
         <img
           src="/pictures/heroimage.png"
           alt="HackTheChain Illustration"
           className="max-w-[80%] sm:max-w-[90%] md:max-w-[100%] lg:max-w-[95%] h-auto hover:wobble"
         />
-      </div>
+      </div> */}
 
       {/* Green Triangular Section */}
       <div

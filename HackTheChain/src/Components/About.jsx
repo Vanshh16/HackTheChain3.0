@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../Styles/About.css';
 import Domains from './Domain';
+import BlurredSmokyCircle from './Shadow';
 
 const teamData = [
   { id: 1, name: "Ashmit Singh", imageUrl: "src/assets/pictures/ashmit.jpg" },
@@ -47,6 +48,9 @@ const Team = () => {
 
   return (
     <div className="team-container">
+    <div className="absolute top-0 right-44">
+          <BlurredSmokyCircle />
+          </div>
       <h1 className="aboutus font-semibold mb-8">About Us</h1>
       <p className="aboutusp text-base md:text-xl mb-10 text-gray-300 font-sans px-4 md:px-24">
         <span>Welcome to HackTheChain 3.0, the biggest hackathon in Kota City, presented by the Indian Institute of Information Technology Kota (IIIT Kota) in association with Codebase IIIT Kota.
