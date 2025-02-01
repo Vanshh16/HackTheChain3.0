@@ -2,18 +2,14 @@ import { useState, useEffect } from 'react';
 import Navbar from './Components/Navbar';
 import FAQs from './Components/FAQs';
 import Home from './Components/Home';
-import Sponsors from './Components/Sponsors' ;
+import Sponsors from './Components/Sponsors';
 import About from './Components/About';
 import Prizes from './Components/Prizes.jsx';
 import Timeline from './Components/Timeline.jsx';
 import Stats from "./Components/Stats.jsx";
 import Ending from "./Components/Ending.jsx";
 import OurTeam from './Components/OurTeam.jsx';
-
 import VideoBackground from "./Components/VideoBackground.jsx";
-
-
-
 import './App.css';
 import AnimatedTransition from './Components/AnimatedTransition';
 import HamburgerMenu from './Components/HamBurgerMenu.jsx';
@@ -25,10 +21,6 @@ function App() {
         </div>
     );
 }
-
-
-
-
 
 function ScreenOpen() {
     const [isAnimationComplete, setIsAnimationComplete] = useState(false);
@@ -62,47 +54,43 @@ function ScreenOpen() {
                 </div>
             ) : (
                 <div className="content">
+                    <VideoBackground />
                     {isSmallScreen ? <HamburgerMenu /> : <Navbar />}
-
-                    {/* HOME SECTION WITH VIDEO BACKGROUND */}
-                    <section id="home" className="home-section">
-                        <VideoBackground /> 
-                        <div className="home-content">
-                            <Home />
-                        </div>
-                    </section>
-
-                    {/* Other sections without video background */}
-                    <section id="about">
-                        <About />
-                    </section>
-                    <section id="timeline">
-                        <Timeline />
-                    </section>
-                    <section id="stats1">
-                        <Stats />
-                    </section>
-                    <section id="prizes">
-                        <Prizes />
-                    </section>
-                    <section id="sponsors">
-                        <Sponsors />
-                    </section>
-                    <section>
-                        <OurTeam />
-                    </section>
-                    <section id="FAQs">
-                        <FAQs />
-                    </section>
-                    <section id="contact">
-                        <Ending />
-                    </section>
+                    <div className="overlay-content">
+                        <section id="home" className="home-section">
+                            <div className="home-content">
+                                <Home />
+                            </div>
+                        </section>
+                        <section id="about">
+                            <About />
+                        </section>
+                        <section id="timeline">
+                            <Timeline />
+                        </section>
+                        <section id="stats1">
+                            <Stats />
+                        </section>
+                        <section id="prizes">
+                            <Prizes />
+                        </section>
+                        <section id="sponsors">
+                            <Sponsors />
+                        </section>
+                        <section>
+                            <OurTeam />
+                        </section>
+                        <section id="FAQs">
+                            <FAQs />
+                        </section>
+                        <section id="contact">
+                            <Ending />
+                        </section>
+                    </div>
                 </div>
             )}
         </div>
     );
 }
-
-
 
 export default App;
