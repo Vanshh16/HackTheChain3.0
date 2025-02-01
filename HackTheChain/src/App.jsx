@@ -10,6 +10,10 @@ import Stats from "./Components/Stats.jsx";
 import Ending from "./Components/Ending.jsx";
 import OurTeam from './Components/OurTeam.jsx';
 
+import VideoBackground from "./Components/VideoBackground.jsx";
+
+
+
 import './App.css';
 import AnimatedTransition from './Components/AnimatedTransition';
 import HamburgerMenu from './Components/HamBurgerMenu.jsx';
@@ -22,16 +26,18 @@ function App() {
     );
 }
 
+
+
+
+
 function ScreenOpen() {
-    const [isHomeVisible, setIsHomeVisible] = useState(false);
+    const [isAnimationComplete, setIsAnimationComplete] = useState(false);
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 935);
 
     useEffect(() => {
-        const hasAnimationPlayed = sessionStorage.getItem('animationsPlayed');
-        if (!hasAnimationPlayed) {
-            setIsHomeVisible(false);
-        } else {
-            setIsHomeVisible(true);
+        const hasAnimationPlayed = sessionStorage.getItem("animationPlayed");
+        if (hasAnimationPlayed) {
+            setIsAnimationComplete(true);
         }
     }, []);
 
@@ -43,21 +49,30 @@ function ScreenOpen() {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    const handleScreenOpen = () => {
-        sessionStorage.setItem('animationPlayed', 'true');
-        setIsHomeVisible(true);
+    const handleAnimationComplete = () => {
+        sessionStorage.setItem("animationPlayed", "true");
+        setIsAnimationComplete(true);
     };
 
     return (
         <div>
-            <div className="image-background"></div> {/* Static background */}
-            
-            {isHomeVisible ? (
+            {!isAnimationComplete ? (
+                <div className="text-slicer">
+                    <AnimatedTransition onAnimationComplete={handleAnimationComplete} />
+                </div>
+            ) : (
                 <div className="content">
                     {isSmallScreen ? <HamburgerMenu /> : <Navbar />}
-                    <section id="Home">
-                        <Home />
+
+                    {/* HOME SECTION WITH VIDEO BACKGROUND */}
+                    <section id="home" className="home-section">
+                        <VideoBackground /> 
+                        <div className="home-content">
+                            <Home />
+                        </div>
                     </section>
+
+                    {/* Other sections without video background */}
                     <section id="about">
                         <About />
                     </section>
@@ -83,13 +98,11 @@ function ScreenOpen() {
                         <Ending />
                     </section>
                 </div>
-            ) : (
-                <div className="text-slicer">
-                    <AnimatedTransition onAnimationComplete={handleScreenOpen} />
-                </div>
             )}
         </div>
     );
 }
+
+
 
 export default App;
