@@ -1,33 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
-import "../Styles/Domains.css";
+import React from "react";
 
 const Domains = () => {
-  const [visibleCards, setVisibleCards] = useState([]);
-  const cardsRef = useRef([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setVisibleCards((prev) => [...prev, entry.target.dataset.id]);
-          }
-        });
-      },
-      { threshold: 0.2 } // Trigger when 20% of the card is visible
-    );
-
-    cardsRef.current.forEach((card) => {
-      if (card) observer.observe(card);
-    });
-
-    return () => {
-      cardsRef.current.forEach((card) => {
-        if (card) observer.unobserve(card);
-      });
-    };
-  }, []);
-
   const domains = [
     {
       id: "1",
@@ -68,30 +41,26 @@ const Domains = () => {
   ];
 
   return (
-    <div className="domains-container">
-      <h1 className="title">DOMAINS</h1>
-      <div className="domains-grid">
-        {domains.map((domain, index) => (
+    <div className="flex flex-col items-center p-10 min-h-screen bg-black text-white">
+      <h1 className="text-6xl sm:text-7xl md:text-8xl text-white font-bold mb-16">
+        DOMAIN
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
+        {domains.map((domain) => (
           <div
             key={domain.id}
-            className={`domain-card ${
-              visibleCards.includes(domain.id) ? "animate-fade-in" : "opacity-0"
-            }`}
-            ref={(el) => (cardsRef.current[index] = el)}
-            data-id={domain.id}
+            className="relative bg-gray-800 p-6 rounded-lg shadow-lg transition-all duration-300 ease-in-out hover:border-4 hover:border-[#45f882] hover:box-border"
           >
-            <span className="icon">
+            {/* Top Left Icon */}
+            <span className="absolute top-3 left-3">
               <svg
-                width="48"
-                height="48"
+                width="40"
+                height="40"
                 viewBox="0 0 24 24"
                 fill="green"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path
-                  d="M12 2L2 14H9V22L19 10H12V2Z"
-                  fill="#808080"
-                />
+                <path d="M12 2L2 14H9V22L19 10H12V2Z" fill="#808080" />
                 <path
                   d="M12 2L2 14H9V22L19 10H12V2Z"
                   stroke="#000"
@@ -106,31 +75,17 @@ const Domains = () => {
                 />
               </svg>
             </span>
-            <h2 className="heading">{domain.title}</h2>
-            <p>{domain.description}</p>
+
+            {/* Card Content */}
+            <h2 className="text-xl font-bold mb-2">{domain.title}</h2>
+            <p className="text-sm leading-relaxed">{domain.description}</p>
           </div>
         ))}
       </div>
-      <style jsx>{`
-        @keyframes fadeInZoom {
-          0% {
-            opacity: 0;
-            transform: scale(0.8) translateY(50px); /* Start smaller and lower */
-          }
-          100% {
-            opacity: 1;
-            transform: scale(1) translateY(0); /* Normal size and position */
-          }
-        }
-        .animate-fade-in {
-          animation: fadeInZoom 2s ease-out forwards;
-        }
-        .opacity-0 {
-          opacity: 0;
-        }
-      `}</style>
     </div>
   );
 };
 
 export default Domains;
+
+

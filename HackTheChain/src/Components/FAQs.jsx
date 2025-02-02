@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import '../Styles/FAQs.css';
 
 const faqsData = [
   { id: 1, question: "When and where is HackTheChain taking place?", answer: "HackTheChain is held in Kota on Feb 2024." },
@@ -16,24 +15,30 @@ const FAQs = () => {
 
   const toggleFaq = (id) => {
     setActiveFaq(activeFaq === id ? null : id);
+
+    // Play sound when the FAQ is clicked and answer is toggled
+    if (activeFaq !== id) {
+      const tickSound = new Audio('/sounds/tick.mp3');
+      tickSound.play();
+    }
   };
 
   return (
-    <div className="faqs-container">
-      <h1 className="faqs-title">FAQs</h1>
-      <div className="faqs-list">
+    <div className="text-white p-10 text-center font-orbitron">
+      <h1 className="text-3xl font-bold mb-8">FAQs</h1>
+      <div className="flex flex-col items-center gap-2">
         {faqsData.map((faq) => (
           <div
             key={faq.id}
-            className={`faq-item ${activeFaq === faq.id ? 'active' : ''}`}
+            className={`w-full max-w-2xl bg-opacity-30 rounded-lg p-4 cursor-pointer transition-colors duration-300 overflow-hidden ${activeFaq === faq.id ? 'bg-gray-800' : 'bg-[#2d687d]'}`}
             onClick={() => toggleFaq(faq.id)}
           >
-            <div className="faq-question">
-              <span className="faq-icon">?</span>
+            <div className="flex items-center text-lg">
+              <span className="mr-2 text-2xl ml-0">?</span>
               {faq.question}
             </div>
             {activeFaq === faq.id && (
-              <div className="faq-answer">{faq.answer}</div>
+              <div className="mt-2 text-base text-[#b0e3ff]">{faq.answer}</div>
             )}
           </div>
         ))}
