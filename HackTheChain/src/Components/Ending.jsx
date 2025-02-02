@@ -30,16 +30,14 @@ const Third = () => {
 
             {/* Quick Links */}
             <div>
-              <h4 className="text-white font-semibold mb-4">Quick Link</h4>
+              <h4 className="text-white font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:underline">Gaming</a></li>
-                <li><a href="#" className="text-gray-400 hover:underline">Product</a></li>
-                <li><a href="#" className="text-gray-400 hover:underline">All NFTs</a></li>
-                <li><a href="#" className="text-gray-400 hover:underline">Social Network</a></li>
-                <li><a href="#" className="text-gray-400 hover:underline">Domain Names</a></li>
-                <li><a href="#" className="text-gray-400 hover:underline">Collectibles</a></li>
+                <li><a href="#home" className="text-gray-400 hover:underline">Home</a></li>
+                <li><a href="#about-us" className="text-gray-400 hover:underline">About Us</a></li>
+                <li><a href="#timeline" className="text-gray-400 hover:underline">Timeline</a></li>
+                <li><a href="#stats" className="text-gray-400 hover:underline">Stats</a></li>
               </ul>
-            </div>
+            </div>  
 
             {/* Support Links */}
             <div>
