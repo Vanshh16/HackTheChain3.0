@@ -197,7 +197,7 @@ const TeamCarousel = ({ title, members, perview }) => {
       <Swiper
         spaceBetween={20}
         slidesPerView={perview}
-        navigation={true}
+        navigation={false}
         loop={true}
         autoplay={{ delay: 2000, disableOnInteraction: false }}
         modules={[Navigation, Autoplay]}
@@ -240,7 +240,7 @@ const OurTeam = () => {
       <TeamCarousel
         title="Lead Organisers"
         members={leadOrganisers}
-        perview={5}
+        perview={4}
       />
       <TeamCarousel
         title="Core Team Members"

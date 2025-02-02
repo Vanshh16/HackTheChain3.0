@@ -66,7 +66,7 @@ const Home = () => {
           className="text-3xl sm:text-xl md:text-2xl lg:text-4xl font-bold text-white"
           style={{
               textShadow:
-                "0 0 5px  rgba(69, 248, 130, 0.66), 0 0 10px  rgba(69, 248, 130, 0.66), 0 0 20px  rgba(69, 248, 130, 0.66), 0 0 40px rgba(69, 248, 130, 0.66)",
+                "0 0 1px  rgba(69, 248, 130, 0.66), 0 0 5px  rgba(69, 248, 130, 0.66), 0 0 10px  rgba(69, 248, 130, 0.66), 0 0 40px rgba(69, 248, 130, 0.66)",
             }}
         >
           CodeBase presents
@@ -78,8 +78,8 @@ const Home = () => {
   }}
           // style={{ textShadow: "-1px 4px 0px rgba(69, 248, 130, 0.66)" }}
         >
-          {/* {text} */}
-          HackTheChain 3.0
+          {text}
+          {/* HackTheChain 3.0 */}
           {!typingComplete && <span className="text-pink-500">|</span>}
         </h1>
 
@@ -107,7 +107,7 @@ const Home = () => {
           </p>
         </div>
 
-        <button className="px-10 py-3 border border-green-500 text-white font-semibold text-lg rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+        <button className="px-10 py-3 border border-green-500 hover:bg-green-900 text-white font-semibold text-lg rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
       Register
     </button>
       </div>

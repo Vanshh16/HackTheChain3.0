@@ -6,7 +6,7 @@ const tournaments = [
   {
     prize: 2000,
     title: "PRESTIGIOUS",
-    places: 2,
+    places: "2nd",
     color: "bg-green-500",
     brg: "border-green-500",
     rewards: [75000, 65000, 55000],
@@ -15,7 +15,7 @@ const tournaments = [
   {
     prize: 5000,
     title: "SUPREME",
-    places: 1,
+    places: "1st",
     color: "bg-yellow-500",
     brg: "border-yellow-500",
     rewards: [75000, 65000, 55000],
@@ -24,7 +24,7 @@ const tournaments = [
   {
     prize: 1000,
     title: "RENOWNED",
-    places: 3,
+    places: "3rd",
     color: "bg-green-500",
     brg: "border-green-500",
     rewards: [75000, 65000, 65000],
@@ -37,17 +37,17 @@ const TournamentCard = ({ prize, title, places, color, rewards, image, brg }) =>
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 0.2 }}
       whileHover={{ scale: 1.05 }}
 
-      className="relative bg-gray-900 rounded-xl p-6 text-center w-80 h-full shadow-2xl 
-                 border-2 border-transparent hover:border-amber-400 transition-all duration-300 ease-in-out 
-                 transform hover:scale-05"
+      className="relative bg-gray-900 rounded-xl p-6 text-center w-80 h-full shadow-md shadow-blue-950
+                 border-2 border-transparent hover:border-green-400 hover:shadow-green-900 transition-all duration-75 ease-in-out 
+                 transform"
     >
       {/* Top Prize Banner */}
       <div
         className={`font-roboto rounded-tl-xl absolute top-0 left-0 px-8 py-3 flex items-center gap-2 ${color} 
-                    shadow-lg transform rotate-[-2deg] hover:rotate-0 transition-all duration-300 ease-in-out`}
+                    shadow-lg transform rotate-[-2deg] hover:rotate-0 transition-all duration-75 ease-in-out`}
       >
         <FaTrophy className="text-yellow-400 text-2xl drop-shadow-md animate-pulse" />
         <span className="text-black font-bold text-lg tracking-wide">

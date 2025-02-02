@@ -90,15 +90,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #1a1a2e; /* Dark background for the card */
-  border-radius: 16px; /* Rounded corners */
+  background-color: #121220; /* Dark background for the card */
+  /* border-radius: 16px; */
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: relative;
   max-width: 220px;
+  height: 300px;
   margin: auto;
 }
-
+ 
 /* Green Diagonal Background */
 .swiper-slide::before {
   content: "";
@@ -107,7 +108,7 @@
   left: 0;
   width: 100%;
   height: 50%;
-  background: #48ff94;
+  background: #35c471;
   clip-path: polygon(0 0, 100% 0, 0 100%);
   z-index: 1;
 }

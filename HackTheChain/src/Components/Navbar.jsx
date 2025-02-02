@@ -66,7 +66,7 @@ export default function Navbar() {
         className="relative flex items-center px-6 py-2 text-lg font-bold text-gray-300 bg-green-600 border-2 border-green-400 shadow-md hover:text-white hover:bg-green-700 transition duration-300 clip-hexagon"
       >
         <Edit3 className="w-5 h-5 mr-2" />
-        ~REGISTER
+        Download Brochure
       </motion.button>
 
       {/* Mobile Menu Toggle */}
