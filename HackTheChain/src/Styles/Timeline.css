@@ -35,14 +35,14 @@ h1 {
 
 .progress-logo {
   position: absolute;
-  left: 0%;
   top: 0%;
   transform: translateY(0);
-  width: 7rem;
-  height: 7rem;
+  width: 100%;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   transition: transform 0.5s ease;
   z-index: 5;
+  background-color: rgb(61, 200, 91);
 }
 
 .timeline-event {

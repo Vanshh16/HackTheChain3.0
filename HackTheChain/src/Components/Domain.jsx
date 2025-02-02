@@ -41,7 +41,7 @@ const Domains = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center p-10 min-h-screen bg-black text-white">
+    <div className="flex flex-col items-center p-10 min-h-screen text-white">
       <h1
         className="text-5xl sm:text-xl md:text-2xl lg:text-7xl m-3 font-bold text-white"
         style={{

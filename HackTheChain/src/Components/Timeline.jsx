@@ -99,7 +99,7 @@ const Timeline = () => {
         <div className="progress-bar" ref={progressBarRef}>
           <div className="colored-overlay" ref={coloredOverlayRef}>
             <div className='timeline-logo'>
-              <img src="/pictures/HTC_logo.png" alt="Logo" className="progress-logo" ref={logoRef} />
+              <div alt="progress-logo" className='progress-logo' ref={logoRef}></div>
             </div>
           </div>
         </div>

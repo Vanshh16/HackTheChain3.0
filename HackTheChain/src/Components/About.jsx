@@ -78,7 +78,7 @@ const Team = () => {
           Join us for an incredible journey where innovation, creativity, and
           problem-solving come to life!
         </div>
-        <div className="domainbox mt-10">
+        <div className="domainbox mt-10" id="domains">
           <Domains />
         </div>
       </p>
