@@ -1,7 +1,6 @@
 // import React, { useState, useEffect } from "react";
 // import "../Styles/OurTeam.css";
 
-
 // const teamData = [
 //   { id: 1, name: "Dhruv Tiwari", imageUrl: "/pictures/dhruv.jpg", role: "Core Team" },
 //   { id: 2, name: "Ashmit Singh", imageUrl: "/pictures/ashmit.jpg", role: "Core Team" },
@@ -88,8 +87,6 @@
 
 // export default OurTeam;
 
-
-
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -99,26 +96,104 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "../Styles/OurTeam.css";
 
 const teamData = [
-  { id: 1, name: "Dhruv Tiwari", imageUrl: "/pictures/dhruv.jpg", role: "Core Team" },
-  { id: 2, name: "Ashmit Singh", imageUrl: "/pictures/ashmit.jpg", role: "Core Team" },
-  { id: 3, name: "Ayush Kumar", imageUrl: "/pictures/ayushphto.jpg", role: "Core Team" },
-  { id: 4, name: "Yash Aggarwal", imageUrl: "/pictures/yash.jpg", role: "Core Team" },
-  { id: 5, name: "Vinay Kumar", imageUrl: "/pictures/vinay.jpg", role: "Core Team" },
-  { id: 6, name: "Avinesh Rathore", imageUrl: "/pictures/avineshboss.jpg", role: "Lead Organiser" },
-  { id: 7, name: "Anany Srivastava", imageUrl: "/pictures/annay.jpg", role: "Lead Organiser" },
-  { id: 8, name: "Devansh Gupta", imageUrl: "/pictures/devanshboss.jpg", role: "Lead Organiser" },
-  { id: 9, name: "Prateek Singh", imageUrl: "/pictures/prateekboss.jpg", role: "Lead Organiser" },
-  { id: 10, name: "Vansh Nigam", imageUrl: "/pictures/vanshboss.jpg", role: "Lead Organiser" },
-  { id: 11, name: "Gopal Patidar", imageUrl: "/pictures/gopalboss.jpg", role: "Lead Organiser" },
-  { id: 12, name: "Jash Parmar", imageUrl: "/pictures/jashboss.jpg", role: "Lead Organiser" },
-  { id: 13, name: "Hari Om Meena", imageUrl: "/pictures/hariboss.jpg", role: "Lead Organiser" },
-  { id: 14, name: "Om", imageUrl: "/pictures/omboss.jpg", role: "Lead Organiser" }
+  {
+    id: 1,
+    name: "Dhruv Tiwari",
+    imageUrl: "/pictures/dhruv.jpg",
+    role: "Core Team",
+  },
+  {
+    id: 2,
+    name: "Ashmit Singh",
+    imageUrl: "/pictures/ashmit.jpg",
+    role: "Core Team",
+  },
+  {
+    id: 3,
+    name: "Ayush Kumar",
+    imageUrl: "/pictures/ayushphto.jpg",
+    role: "Core Team",
+  },
+  {
+    id: 4,
+    name: "Yash Aggarwal",
+    imageUrl: "/pictures/yash.jpg",
+    role: "Core Team",
+  },
+  {
+    id: 5,
+    name: "Vinay Kumar",
+    imageUrl: "/pictures/vinay.jpg",
+    role: "Core Team",
+  },
+  {
+    id: 6,
+    name: "Avinesh Rathore",
+    imageUrl: "/pictures/avineshboss.jpg",
+    role: "Lead Organiser",
+  },
+  {
+    id: 7,
+    name: "Anany Srivastava",
+    imageUrl: "/pictures/annay.jpg",
+    role: "Lead Organiser",
+  },
+  {
+    id: 8,
+    name: "Devansh Gupta",
+    imageUrl: "/pictures/devanshboss.jpg",
+    role: "Lead Organiser",
+  },
+  {
+    id: 9,
+    name: "Prateek Singh",
+    imageUrl: "/pictures/prateekboss.jpg",
+    role: "Lead Organiser",
+  },
+  {
+    id: 10,
+    name: "Vansh Nigam",
+    imageUrl: "/pictures/vanshboss.jpg",
+    role: "Lead Organiser",
+  },
+  {
+    id: 11,
+    name: "Gopal Patidar",
+    imageUrl: "/pictures/gopalboss.jpg",
+    role: "Lead Organiser",
+  },
+  {
+    id: 12,
+    name: "Jash Parmar",
+    imageUrl: "/pictures/jashboss.jpg",
+    role: "Lead Organiser",
+  },
+  {
+    id: 13,
+    name: "Hari Om Meena",
+    imageUrl: "/pictures/hariboss.jpg",
+    role: "Lead Organiser",
+  },
+  {
+    id: 14,
+    name: "Om",
+    imageUrl: "/pictures/omboss.jpg",
+    role: "Lead Organiser",
+  },
 ];
 
 const TeamCarousel = ({ title, members, perview }) => {
   return (
     <div className="team-carousel mb-12 w-full max-w-4xl">
-      <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">{title}</h2>
+      <h2
+        className="text-3xl sm:text-xl md:text-2xl lg:text-4xl font-bold text-white text-center mb-6"
+        style={{
+          textShadow:
+            "0 0 5px  rgba(69, 248, 130, 0.66), 0 0 10px  rgba(69, 248, 130, 0.66), 0 0 20px  rgba(69, 248, 130, 0.66), 0 0 40px rgba(69, 248, 130, 0.66)",
+        }}
+      >
+        {title}
+      </h2>
       <Swiper
         spaceBetween={20}
         slidesPerView={perview}
@@ -130,12 +205,12 @@ const TeamCarousel = ({ title, members, perview }) => {
       >
         {members.map((member) => (
           <SwiperSlide key={member.id} className="text-center">
-          <div className="image-container">
-            <img src={member.imageUrl} alt={member.name} />
-          </div>
-          <p className="name">{member.name}</p>
-          <p className="role">{member.role}</p>
-        </SwiperSlide>
+            <div className="image-container">
+              <img src={member.imageUrl} alt={member.name} />
+            </div>
+            <p className="name">{member.name}</p>
+            <p className="role">{member.role}</p>
+          </SwiperSlide>
         ))}
       </Swiper>
     </div>
@@ -143,10 +218,14 @@ const TeamCarousel = ({ title, members, perview }) => {
 };
 
 const OurTeam = () => {
-  const leadOrganisers = teamData.filter(member => member.role === "Lead Organiser");
-  console.log(leadOrganisers)
-  const coreTeamMembers = teamData.filter(member => member.role === "Core Team");
-  console.log(coreTeamMembers)
+  const leadOrganisers = teamData.filter(
+    (member) => member.role === "Lead Organiser"
+  );
+  console.log(leadOrganisers);
+  const coreTeamMembers = teamData.filter(
+    (member) => member.role === "Core Team"
+  );
+  console.log(coreTeamMembers);
   return (
     <div className="flex flex-col items-center bg-transparent px-4 py-10">
       <h1
@@ -158,8 +237,16 @@ const OurTeam = () => {
       >
         Our Team
       </h1>
-      <TeamCarousel title="Lead Organisers" members={leadOrganisers} perview={5} />
-      <TeamCarousel title="Core Team Members" members={coreTeamMembers} perview={4}/>
+      <TeamCarousel
+        title="Lead Organisers"
+        members={leadOrganisers}
+        perview={5}
+      />
+      <TeamCarousel
+        title="Core Team Members"
+        members={coreTeamMembers}
+        perview={4}
+      />
     </div>
   );
 };

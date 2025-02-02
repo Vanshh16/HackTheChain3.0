@@ -42,7 +42,13 @@ const Domains = () => {
 
   return (
     <div className="flex flex-col items-center p-10 min-h-screen bg-black text-white">
-      <h1 className="text-6xl sm:text-7xl md:text-8xl text-white font-bold mb-16">
+      <h1
+        className="text-5xl sm:text-xl md:text-2xl lg:text-7xl m-3 font-bold text-white"
+        style={{
+          textShadow:
+            "0 0 5px  rgba(69, 248, 130, 0.66), 0 0 10px  rgba(69, 248, 130, 0.66), 0 0 20px  rgba(69, 248, 130, 0.66), 0 0 40px rgba(69, 248, 130, 0.66)",
+        }}
+      >
         DOMAIN
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl">
@@ -77,7 +83,7 @@ const Domains = () => {
             </span>
 
             {/* Card Content */}
-            <h2 className="text-xl font-bold mb-2">{domain.title}</h2>
+            <h2 className="text-xl font-bold mb-2 ml-10">{domain.title}</h2>
             <p className="text-sm leading-relaxed">{domain.description}</p>
           </div>
         ))}
@@ -87,5 +93,3 @@ const Domains = () => {
 };
 
 export default Domains;
-
-

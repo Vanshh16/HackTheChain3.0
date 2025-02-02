@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+      },
       animation: {
         'move-left': 'moveLeft 10s linear infinite',
         'move-right': 'moveRight 10s linear infinite',
@@ -22,18 +25,9 @@ export default {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(100%)' },
         },
-        swing: { // Pendulum swing keyframes
-          '0%, 100%': { transform: 'rotate(30deg)' },
-          '50%': { transform: 'rotate(-30deg)' },
-        },
-        spinSlow: {
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
-        },
-        revolve: {
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
-        },
+      },
+      backgroundImage: {
+        'gradient-to-r': 'linear-gradient(to right, #ff7e5f, #feb47b)',
       },
       textShadow: {
         sm: '1px 1px 2px rgba(0, 0, 0, 0.5)',
@@ -42,18 +36,6 @@ export default {
       },
       clipPath: {
         'green-triangle': 'polygon(0 75%, 100% 0, 100% 100%, 0 100%)',
-      },
-      colors: {
-        green: {
-          400: '#38a169', // Light green
-          600: '#2f855a', // Darker green
-        },
-      },
-      fontSize: {
-        '6xl': '4rem', // Custom size for the heading
-      },
-      fontWeight: {
-        'bold': '700', // Custom bold weight
       },
     },
   },
