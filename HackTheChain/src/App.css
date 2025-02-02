@@ -14,7 +14,7 @@
   padding: 0;
   box-sizing: border-box;
   scrollbar-width: thin;
-  scrollbar-color: rgba(90, 219, 255, 0.89) black;
+  scrollbar-color: rgba(90, 255, 115, 0.89) black;
   scroll-behavior: smooth;
 }
 

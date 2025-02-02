@@ -13,6 +13,9 @@ export default {
       animation: {
         'move-left': 'moveLeft 10s linear infinite',
         'move-right': 'moveRight 10s linear infinite',
+        'swing': 'swing 2s ease-in-out infinite', // Pendulum swing animation
+        'spin-slow': 'spin-slow 15s linear infinite',
+        'revolve': 'revolve 10s linear infinite',
       },
       keyframes: {
         moveLeft: {
