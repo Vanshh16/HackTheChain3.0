@@ -43,7 +43,7 @@ const Domains = () => {
   return (
     <div className="flex flex-col items-center p-10 min-h-screen text-white">
       <h1
-        className="text-5xl sm:text-xl md:text-2xl lg:text-7xl m-3 font-bold text-white"
+        className="text-5xl sm:text-xl md:text-2xl lg:text-7xl m-3 font-bold text-white newfont"
         style={{
           textShadow:
             "0 0 5px  rgba(69, 248, 130, 0.66), 0 0 10px  rgba(69, 248, 130, 0.66), 0 0 20px  rgba(69, 248, 130, 0.66), 0 0 40px rgba(69, 248, 130, 0.66)",

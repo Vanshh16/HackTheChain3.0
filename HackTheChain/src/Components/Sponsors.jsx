@@ -5,7 +5,7 @@ const Sponsors = () => {
     <section className="w-full min-h-[100vh]  overflow-x-hidden">
       <div className="text-white">
         <div className="container mx-auto py-10 px-4 sm:px-6 text-center">
-          <h1 className="text-3xl sm:text-xl md:text-2xl lg:text-6xl font-bold text-white"
+          <h1 className="text-3xl sm:text-xl md:text-2xl lg:text-6xl font-bold text-white newfont"
           style={{
               textShadow:
                 "0 0 5px  rgba(69, 248, 130, 0.66), 0 0 10px  rgba(69, 248, 130, 0.66), 0 0 20px  rgba(69, 248, 130, 0.66), 0 0 40px rgba(69, 248, 130, 0.66)",
