@@ -61,7 +61,7 @@ const Home = () => {
       <BlurredSmokyCircle />
       </div>
       
-      <div className="w-full px-32 space-y-16 text-center z-10">
+      <div className="w-full px-80 space-y-16 text-center z-10">
       <h1
           className="text-3xl sm:text-xl md:text-2xl lg:text-4xl font-bold text-white"
           style={{

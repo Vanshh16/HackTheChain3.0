@@ -76,7 +76,7 @@ const Timeline = () => {
   return (
     <div>
       <h1
-        className="text-5xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl font-bold text-white text-center mb-10"
+        className="text-5xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl font-bold text-white text-center mb-10 newfont"
         style={{
           textShadow:
             "0 0 5px rgba(69, 248, 130, 0.66), 0 0 10px rgba(69, 248, 130, 0.66), 0 0 20px rgba(69, 248, 130, 0.66), 0 0 40px rgba(69, 248, 130, 0.66)",

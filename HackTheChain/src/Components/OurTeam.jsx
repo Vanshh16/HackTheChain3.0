@@ -157,7 +157,7 @@ const OurTeam = () => {
   return (
     <div className="flex flex-col items-center bg-transparent px-4 py-10">
       <h1
-        className="text-4xl sm:text-7xl md:text-8xl text-white font-bold mb-12"
+        className="text-4xl sm:text-7xl md:text-8xl text-white font-bold mb-12 newfont"
         style={{
           textShadow:
             "0 0 5px rgba(69, 248, 130, 0.66), 0 0 10px rgba(69, 248, 130, 0.66), 0 0 20px rgba(69, 248, 130, 0.66), 0 0 40px rgba(69, 248, 130, 0.66)",
