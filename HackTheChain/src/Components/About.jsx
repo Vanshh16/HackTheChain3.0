@@ -54,7 +54,15 @@ const Team = () => {
       <div className="absolute top-0 right-44">
         <BlurredSmokyCircle />
       </div>
-      <h1 className="aboutus font-semibold mb-8">About Us</h1>
+      <h1
+        className="text-5xl text-center sm:text-xl md:text-2xl lg:text-7xl m-3 font-bold text-white"
+        style={{
+          textShadow:
+            "0 0 5px  rgba(69, 248, 130, 0.66), 0 0 10px  rgba(69, 248, 130, 0.66), 0 0 20px  rgba(69, 248, 130, 0.66), 0 0 40px rgba(69, 248, 130, 0.66)",
+        }}
+      >
+        ABOUT US
+      </h1>
       <p className="aboutusp text-base md:text-xl mb-10 text-gray-300 font-sans px-4 md:px-24">
         <span>
           Welcome to HackTheChain 3.0, the biggest hackathon in Kota City,
