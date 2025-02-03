@@ -63,7 +63,7 @@ const Home = () => {
       
       <div className="w-full px-80 space-y-16 text-center z-10">
       <h1
-          className="text-3xl sm:text-xl md:text-2xl lg:text-4xl font-bold text-white"
+          className="text-3xl sm:text-xl md:text-2xl lg:text-4xl font-bold text-white mt-20"
           style={{
               textShadow:
                 "0 0 1px  rgba(69, 248, 130, 0.66), 0 0 5px  rgba(69, 248, 130, 0.66), 0 0 10px  rgba(69, 248, 130, 0.66), 0 0 40px rgba(69, 248, 130, 0.66)",

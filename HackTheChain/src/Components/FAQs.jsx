@@ -59,12 +59,7 @@ const FAQs = () => {
   return (
     <div className="text-white p-10 font-orbitron">
       <h1
-        className="text-3xl sm:text-xl md:text-2xl lg:text-4xl font-bold text-white text-center mb-4 newfont"
-        style={{
-          textShadow:
-            "0 0 5px  rgba(69, 248, 130, 0.66), 0 0 10px  rgba(69, 248, 130, 0.66), 0 0 20px  rgba(69, 248, 130, 0.66), 0 0 40px rgba(69, 248, 130, 0.66)",
-        }}
-      >
+        className="text-3xl sm:text-xl md:text-2xl lg:text-6xl font-bold text-white text-center mb-10 newfont">
         FAQs
       </h1>
       <div className="flex flex-col items-center gap-2">

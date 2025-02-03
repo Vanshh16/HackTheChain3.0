@@ -97,12 +97,7 @@ const TeamCarousel = ({ title, members, perview }) => {
   return (
     <div className="team-carousel mb-12 w-full max-w-4xl">
       <h2
-        className="text-3xl sm:text-xl md:text-2xl lg:text-4xl font-bold text-white text-center mb-6"
-        style={{
-          textShadow:
-            "0 0 5px  rgba(69, 248, 130, 0.66), 0 0 10px  rgba(69, 248, 130, 0.66), 0 0 20px  rgba(69, 248, 130, 0.66), 0 0 40px rgba(69, 248, 130, 0.66)",
-        }}
-      >
+        className="text-3xl sm:text-xl md:text-2xl lg:text-4xl font-bold text-white text-center mb-6">
         {title}
       </h2>
       <Swiper
@@ -157,11 +152,7 @@ const OurTeam = () => {
   return (
     <div className="flex flex-col items-center bg-transparent px-4 py-10">
       <h1
-        className="text-4xl sm:text-7xl md:text-8xl text-white font-bold mb-12 newfont"
-        style={{
-          textShadow:
-            "0 0 5px rgba(69, 248, 130, 0.66), 0 0 10px rgba(69, 248, 130, 0.66), 0 0 20px rgba(69, 248, 130, 0.66), 0 0 40px rgba(69, 248, 130, 0.66)",
-        }}
+        className="text-3xl sm:text-xl md:text-2xl lg:text-6xl font-bold text-white text-center mb-10 newfont"
       >
         Our Team
       </h1>

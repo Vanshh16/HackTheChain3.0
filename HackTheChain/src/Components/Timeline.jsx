@@ -55,6 +55,7 @@ const Timeline = () => {
               const maxLogoPosition = progressBarRef.current.clientHeight * 0.95;
               const logoPosition = isLastEvent ? maxLogoPosition : (progressBarRef.current.clientHeight * (progress / 100));
               logoRef.current.style.transform = `translateY(${logoPosition}px)`;
+              eventRefs.current[nearestEventIndex].style.borderColor = 'white';
 
               setHasScrolled(true);
             }, 1000);
@@ -77,18 +78,14 @@ const Timeline = () => {
     <div>
       <h1
         className="text-5xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl font-bold text-white text-center mb-10 newfont"
-        style={{
-          textShadow:
-            "0 0 5px rgba(69, 248, 130, 0.66), 0 0 10px rgba(69, 248, 130, 0.66), 0 0 20px rgba(69, 248, 130, 0.66), 0 0 40px rgba(69, 248, 130, 0.66)",
-        }}
       >
-        TIMELINE
+        Timeline
       </h1>
 
       <div ref={timelineRef}>
         {timelineEvents.map((event, index) => (
           <div key={event.id} ref={(el) => (eventRefs.current[index] = el)} className="timeline-event">
-            <div className="timeline-event-content">
+            <div className="timeline-event-content content-font">
               <div className="timeline-event-title text-blue-400">{event.title}</div>
               <div className="timeline-event-date">{event.date}</div>
               <div className="timeline-event-description">{event.description}</div>

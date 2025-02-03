@@ -5,11 +5,7 @@ const Sponsors = () => {
     <section className="w-full min-h-[100vh]  overflow-x-hidden">
       <div className="text-white">
         <div className="container mx-auto py-10 px-4 sm:px-6 text-center">
-          <h1 className="text-3xl sm:text-xl md:text-2xl lg:text-6xl font-bold text-white newfont"
-          style={{
-              textShadow:
-                "0 0 5px  rgba(69, 248, 130, 0.66), 0 0 10px  rgba(69, 248, 130, 0.66), 0 0 20px  rgba(69, 248, 130, 0.66), 0 0 40px rgba(69, 248, 130, 0.66)",
-            }}>Sponsors</h1>
+          <h1 className="text-3xl sm:text-xl md:text-2xl lg:text-6xl font-bold text-white newfont">Sponsors</h1>
           <p className="text-gray-400 mt-5 text-lg sm:text-xl">
             Today, we bring you the opportunity to collaborate with us on our next endeavor.
             <a href="#" className="underline ml-1 text-white">
@@ -20,7 +16,7 @@ const Sponsors = () => {
           {/* Platinum Sponsor */}
           <div className="grid lg:grid-cols-3 sm:grid-cols-1 mt-8 px-4">
             <div className="max-w-6xl px-6 container text-center space-y-8">
-              <h2 className="mt-6" style={{ fontSize: '40px', color: 'silver', fontWeight: 'bold' }}>Platinum</h2>
+              <h2 className="mt-6 newfont" style={{ fontSize: '40px', color: 'silver', fontWeight: 'bold' }}>Platinum</h2>
               <div className="w-full border rounded-sm min-h-[100px] flex items-center justify-center p-5 hover:bg-[linear-gradient(rgba(53,225,255,0.4)_-50%,_rgba(58,58,58,0.15)_50%)]">
                 <ul className="grid sm:grid-rows-2 gap-10 md:gap-10 items-center relative">
                   <li className="flex items-center justify-center md:px-10">
@@ -35,7 +31,7 @@ const Sponsors = () => {
 
             {/* Diamond */}
             <div className="max-w-6xl px-6 h-6xl container text-center space-y-8">
-              <h2 className="mt-6" style={{ fontSize: '40px', color: '#009c9e', fontWeight: 'bold' }}>Diamond</h2>
+              <h2 className="mt-6 newfont" style={{ fontSize: '40px', color: '#009c9e', fontWeight: 'bold' }}>Diamond</h2>
               <div className="w-full border rounded-sm min-h-[100px] flex items-center justify-center p-10 hover:bg-[linear-gradient(rgba(176,103,255,0.6)_-50%,rgba(58,58,58,0.15)_50%)]">
                 <ul className="grid sm:grid-rows-1 gap-10 md:gap-10 items-center relative">
                   <li className="flex items-center justify-center md:px-10">
@@ -50,7 +46,7 @@ const Sponsors = () => {
 
             {/* Gold */}
             <div className="max-w-6xl px-6 container text-center space-y-8">
-              <h2 className="mt-6" style={{ fontSize: '40px', color: '#ccac00', fontWeight: 'bold' }}>Gold</h2>
+              <h2 className="mt-6 newfont" style={{ fontSize: '40px', color: '#ccac00', fontWeight: 'bold' }}>Gold</h2>
               <div className="w-full border rounded-sm min-h-[100px] flex items-center justify-center p-10 hover:bg-[linear-gradient(rgba(255,63,192,0.6)_-50%,_rgba(58,58,58,0.15)_50%)]">
                 <ul className="grid grid-rows-1 gap-10 md:gap-10 items-center relative">
                   <li className="flex items-center justify-center md:px-10">
@@ -72,9 +68,9 @@ const Sponsors = () => {
             <section id="other-sponsors" className="relative section">
               {/* <div className="bg-purple opacity-20 top-[10%] left-[50px] absolute w-[300px] rounded-full blur-3xl aspect-square"></div> */}
               {/* <div className="bg-purple opacity-20 bottom-[10%] -right-[80px] absolute w-[300px] rounded-full blur-3xl aspect-square"></div> */}
-              <div className="max-w-6xl container text-center space-y-8">
+              <div className="max-w-6xl container space-y-8">
                 <div className="max-w-lg container space-y-4">
-                  <h2 className="mt-6 ml-10" style={{ fontSize: '40px', fontWeight: 'bold' }}>Other Sponsors</h2>
+                  <h2 className="mt-6 ml-20 newfont" style={{ fontSize: '40px', fontWeight: 'bold' }}>Other Sponsors</h2>
                 </div>
                 <div className="w-full border rounded-sm min-h-[100px] flex items-center justify-center p-10 hover:bg-[linear-gradient(rgba(176,103,255,0.6)_-50%,rgba(58,58,58,0.15)_50%)]">
                   <ul className="grid sm:grid-cols-3 gap-10 md:gap-10 items-center relative">
@@ -109,7 +105,7 @@ const Sponsors = () => {
               {/* <div className="bg-purple opacity-20 bottom-[10%] -right-[80px] absolute w-[300px] rounded-full blur-3xl aspect-square"></div> */}
               <div className="max-w-6xl container text-center space-y-8">
                 <div className="max-w-lg container space-y-4">
-                  <h2 className="text-4xl font-bold ml-10">
+                  <h2 className="text-4xl font-bold ml-10 newfont">
                     Campus Partners
                   </h2>
                 </div>

@@ -80,7 +80,7 @@ const TournamentCard = ({ prize, title, places, color, rewards, image, brg }) =>
 const TournamentSection = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center py-16 px-8 my-16 bg-gray-950">
-      <h1 className="text-green-500 text-3xl font-bold mb-4 font-roboto">OUR PRIZES</h1>
+      <h1 className="text-green-500 text-3xl font-bold mb-4 newfont">OUR PRIZES</h1>
       <h2 className="text-white text-5xl font-bold mb-8">COMPETE TO EARN REWARDS</h2>
 
       <div className="w-24 h-2 bg-gradient-to-r from-green-400 to-green-600 rounded-lg mb-24"></div>
