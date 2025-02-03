@@ -76,9 +76,11 @@ const FAQs = () => {
             }`}
             onClick={() => toggleFaq(faq.id)}
           >
-            <div className="flex text-lg">
-              <span className="mr-2 text-2xl ml-0">?</span>
-              {faq.question}
+            <div className="flex justify-between text-lg">
+              <span>{faq.question}</span>
+              <span className="text-2xl">
+                {activeFaq === faq.id ? "▼" : "+"}
+              </span>
             </div>
             {activeFaq === faq.id && (
               <div className="mt-2 text-base text-[#b0e3ff]">{faq.answer}</div>
@@ -91,3 +93,4 @@ const FAQs = () => {
 };
 
 export default FAQs;
+
