@@ -85,7 +85,7 @@ const Home = () => {
 
         {/* Card Section */}
         <div
-        className="w-1/2 mx-auto"
+        className="w-2/3 mx-auto"
           // className={`${
           //   showContent ? "animate-fade-up" : "opacity-0"
           // } bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md mx-auto mt-6 ml-0`}

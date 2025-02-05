@@ -66,7 +66,7 @@ const FAQs = () => {
         {faqsData.map((faq) => (
           <div
             key={faq.id}
-            className={`w-full max-w-2xl bg-opacity-30 rounded-lg p-4 cursor-pointer transition-colors duration-300 overflow-hidden ${
+            className={`w-full max-w-2xl bg-opacity-70 rounded-lg p-4 cursor-pointer transition-colors duration-300 overflow-hidden ${
               activeFaq === faq.id ? "bg-gray-800" : "bg-[#2d687d]"
             }`}
             onClick={() => toggleFaq(faq.id)}

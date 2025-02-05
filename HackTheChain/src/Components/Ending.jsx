@@ -12,7 +12,7 @@ const Third = () => {
           <div className="flex flex-col space-y-4">
             <div className="flex items-center ">
               <div className="h-10 w-20 flex items-center justify-center rounded-lg ml-10">
-                <img src="../../public/pictures/codebase.png" alt="Logo" className="w-10 h-10" />
+                <img src="/pictures/codebase.png" alt="Logo" className="w-10 h-10" />
 
                 <span className="text-white text-2xl font-bold ml-3 font-roboto hover:text-green-400 ">CODEBASE</span>
 
