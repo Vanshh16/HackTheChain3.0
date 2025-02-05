@@ -68,9 +68,9 @@ const Sponsors = () => {
             <section id="other-sponsors" className="relative section">
               {/* <div className="bg-purple opacity-20 top-[10%] left-[50px] absolute w-[300px] rounded-full blur-3xl aspect-square"></div> */}
               {/* <div className="bg-purple opacity-20 bottom-[10%] -right-[80px] absolute w-[300px] rounded-full blur-3xl aspect-square"></div> */}
-              <div className="max-w-6xl container space-y-8">
+              <div className="max-w-6xl container space-y-8 flex flex-col justify-center items-center">
                 <div className="max-w-lg container space-y-4">
-                  <h2 className="mt-6 ml-20 newfont" style={{ fontSize: '40px', fontWeight: 'bold' }}>Other Sponsors</h2>
+                  <h2 className="mt-6 newfont" style={{ fontSize: '40px', fontWeight: 'bold' }}>Other Sponsors</h2>
                 </div>
                 <div className="w-full border rounded-sm min-h-[100px] flex items-center justify-center p-10 hover:bg-[linear-gradient(rgba(176,103,255,0.6)_-50%,rgba(58,58,58,0.15)_50%)]">
                   <ul className="grid sm:grid-cols-3 gap-10 md:gap-10 items-center relative">
@@ -103,9 +103,9 @@ const Sponsors = () => {
             <section className="relative overflow-hidden">
               {/* <div className="bg-purple opacity-20 top-[10%] left-[50px] absolute w-[300px] rounded-full blur-3xl aspect-square"></div> */}
               {/* <div className="bg-purple opacity-20 bottom-[10%] -right-[80px] absolute w-[300px] rounded-full blur-3xl aspect-square"></div> */}
-              <div className="max-w-6xl container text-center space-y-8">
+              <div className="max-w-6xl container text-center space-y-8 flex flex-col justify-center items-center">
                 <div className="max-w-lg container space-y-4">
-                  <h2 className="text-4xl font-bold ml-10 newfont">
+                  <h2 className="text-4xl font-bold newfont">
                     Campus Partners
                   </h2>
                 </div>
