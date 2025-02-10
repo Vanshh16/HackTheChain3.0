@@ -107,9 +107,14 @@ const Home = () => {
           </p>
         </div>
 
-        <button className="px-10 py-3 border border-green-500 hover:bg-green-900 text-white font-semibold text-lg rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
-      Register
-    </button>
+       <div className="ml-80">
+       <button className="px-10 py-3 border border-green-500 hover:bg-green-900 text-white font-semibold text-lg rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center">
+        <img src="/devfolio-icon.png" width={30} height={30} alt="logo" className="mr-3" />
+         Register
+       </button>
+       </div>
+        
+
       </div>
 
       {/* Image Section */}
