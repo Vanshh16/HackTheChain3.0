@@ -6,9 +6,7 @@ const Sponsors = () => {
           <h1 className="text-3xl sm:text-xl md:text-2xl lg:text-6xl font-bold text-white newfont">Sponsors</h1>
           <p className="text-gray-400 mt-5 text-lg sm:text-xl">
             Today, we bring you the opportunity to collaborate with us on our next endeavor.
-            <a href="#" className="underline ml-1 text-white">
-              Sponsor Us
-            </a>
+           
           </p>
 
           {/* Platinum Sponsor */}
