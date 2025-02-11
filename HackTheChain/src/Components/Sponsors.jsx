@@ -1,5 +1,3 @@
-import React from "react";
-
 const Sponsors = () => {
   return (
     <section className="w-full min-h-[100vh]  overflow-x-hidden">
@@ -40,6 +38,9 @@ const Sponsors = () => {
                   <li className="flex items-center justify-center md:px-10">
                     <img src="./partners/solona.png" alt="Solana Logo" />
                   </li>
+                  <li className="flex items-center justify-center md:px-10">
+                    <img src="./partners/ethIndia.png" alt="eth Logo" />
+                  </li>
                 </ul>
               </div>
             </div>
@@ -47,7 +48,7 @@ const Sponsors = () => {
             {/* Gold */}
             <div className="max-w-6xl px-6 container text-center space-y-8">
               <h2 className="mt-6 newfont" style={{ fontSize: '40px', color: '#ccac00', fontWeight: 'bold' }}>Gold</h2>
-              <div className="w-full border rounded-sm min-h-[100px] flex items-center justify-center p-10 hover:bg-[linear-gradient(rgba(255,63,192,0.6)_-50%,_rgba(58,58,58,0.15)_50%)]">
+              <div className="w-full border rounded-sm min-h-[100px] items-center justify-center p-10 hover:bg-[linear-gradient(rgba(255,63,192,0.6)_-50%,_rgba(58,58,58,0.15)_50%)]">
                 <ul className="grid grid-rows-1 gap-10 md:gap-10 items-center relative">
                   <li className="flex items-center justify-center md:px-10">
                     <a href="https://beeceptor.com" target="_blank" rel="noopener noreferrer">
@@ -123,9 +124,7 @@ const Sponsors = () => {
                 </div>
               </div>
             </section>
-
           </div>
-
         </div>
       </div>
     </section>
