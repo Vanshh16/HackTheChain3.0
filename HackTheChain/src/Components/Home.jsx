@@ -109,7 +109,7 @@ const Home = () => {
 
         <div className="flex justify-center mb-[20]">
   <button className="px-6 sm:px-8 md:px-10 py-3 border border-green-500 hover:bg-green-900 text-white font-semibold text-sm sm:text-md md:text-lg rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center">
-    <img src="/devfolio-icon.png" width={25} height={25} alt="logo" className="mr-2 sm:mr-3 w-5 sm:w-6 md:w-7" />
+    <img src="/devfolio-icon.png" width={25} height={25} alt="DEVFOLIO LOGO" className="mr-2 sm:mr-3 w-5 sm:w-6 md:w-7" />
     Register
   </button>
 </div>
