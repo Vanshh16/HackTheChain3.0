@@ -60,7 +60,6 @@ const Third = () => {
           <div>
             <h4 className="text-white font-bold text-xl mb-4 font-roboto  hover:text-green-400">Supports</h4>
             <ul className="space-y-2 font-serif">
-              <li><a href="#" className="text-gray-400 hover:underline">Setting & Privacy</a></li>
               <li><a href="#" className="text-gray-400 hover:underline">Help & Support</a></li>
               <li><a href="#" className="text-gray-400 hover:underline">+91 7665093553</a></li>
             </ul>
