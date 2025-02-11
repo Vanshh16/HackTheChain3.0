@@ -85,7 +85,7 @@ const Home = () => {
 
         {/* Card Section */}
         <div
-        className="w-2/3 mx-auto"
+        className="w-80 mx-auto"
           // className={`${
           //   showContent ? "animate-fade-up" : "opacity-0"
           // } bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md mx-auto mt-6 ml-0`}
@@ -94,7 +94,7 @@ const Home = () => {
           // }}
         >
           <h2
-            className="text-xl sm:text-2xl md:text-3xl text-white"
+            className="text-xl sm:text-2xl md:text-2xl text-white"
             style={{
               textShadow:
                 "0 0 5px  rgba(69, 248, 130, 0.66), 0 0 10px  rgba(69, 248, 130, 0.66), 0 0 20px  rgba(69, 248, 130, 0.66), 0 0 40px rgba(69, 248, 130, 0.66)",
@@ -102,17 +102,17 @@ const Home = () => {
           >
             The Biggest Hackathon in Kota City
           </h2>
-          <p className="text-sm sm:text-lg leading-relaxed mt-4" style={{ fontFamily: "cursive" }}>
+          <p className="text-sm sm:text-lg leading-relaxed mt-4 " style={{ fontFamily: "serif" }}>
             As part of our Tech-Summit organized by TechKnow Society, join the ultimate hackathon for developers of all skill levels! Hack your way to success at HackTheChain 3.0!
           </p>
         </div>
 
-       <div className="ml-80">
-       <button className="px-10 py-3 border border-green-500 hover:bg-green-900 text-white font-semibold text-lg rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center">
-        <img src="/devfolio-icon.png" width={30} height={30} alt="logo" className="mr-3" />
-         Register
-       </button>
-       </div>
+        <div className="flex justify-center mb-[20]">
+  <button className="px-6 sm:px-8 md:px-10 py-3 border border-green-500 hover:bg-green-900 text-white font-semibold text-sm sm:text-md md:text-lg rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center">
+    <img src="/devfolio-icon.png" width={25} height={25} alt="logo" className="mr-2 sm:mr-3 w-5 sm:w-6 md:w-7" />
+    Register
+  </button>
+</div>
         
 
       </div>
