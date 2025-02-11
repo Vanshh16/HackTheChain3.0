@@ -85,7 +85,7 @@ const Home = () => {
 
         {/* Card Section */}
         <div
-        className="w-80 mx-auto"
+        className="w-full mx-auto"
           // className={`${
           //   showContent ? "animate-fade-up" : "opacity-0"
           // } bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md mx-auto mt-6 ml-0`}
@@ -94,7 +94,7 @@ const Home = () => {
           // }}
         >
           <h2
-            className="text-xl sm:text-2xl md:text-2xl text-white"
+            className="text-xl font-rubik sm:text-2xl md:text-2xl text-white"
             style={{
               textShadow:
                 "0 0 5px  rgba(69, 248, 130, 0.66), 0 0 10px  rgba(69, 248, 130, 0.66), 0 0 20px  rgba(69, 248, 130, 0.66), 0 0 40px rgba(69, 248, 130, 0.66)",
@@ -102,7 +102,7 @@ const Home = () => {
           >
             The Biggest Hackathon in Kota City
           </h2>
-          <p className="text-sm sm:text-lg leading-relaxed mt-4 " style={{ fontFamily: "serif" }}>
+          <p className="text-sm sm:text-lg leading-relaxed mt-4 font-roboto">
             As part of our Tech-Summit organized by TechKnow Society, join the ultimate hackathon for developers of all skill levels! Hack your way to success at HackTheChain 3.0!
           </p>
         </div>

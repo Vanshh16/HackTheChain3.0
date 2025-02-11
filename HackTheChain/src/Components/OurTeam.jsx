@@ -110,7 +110,7 @@ const TeamCarousel = ({ title, members, perview }) => {
         className="mySwiper"
       >
         {members.map((member) => (
-          <SwiperSlide key={member.id} className="text-center">
+          <SwiperSlide key={member.id} className="text-center rounded-lg">
             <div className="image-container">
               <img src={member.imageUrl} alt={member.name} />
             </div>
